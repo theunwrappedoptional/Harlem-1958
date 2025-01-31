@@ -11,6 +11,10 @@
 		540501682D4CCD52003222BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540501672D4CCD52003222BF /* ContentView.swift */; };
 		5405016A2D4CCD55003222BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540501692D4CCD55003222BF /* Assets.xcassets */; };
 		5405016D2D4CCD55003222BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5405016C2D4CCD55003222BF /* Preview Assets.xcassets */; };
+		540501742D4CD2D1003222BF /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540501732D4CD2D1003222BF /* Bundle-Decodable.swift */; };
+		540501762D4CD316003222BF /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = 540501752D4CD316003222BF /* artists.json */; };
+		5405017A2D4CD3D0003222BF /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540501792D4CD3D0003222BF /* Artist.swift */; };
+		5405017C2D4CE1D9003222BF /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405017B2D4CE1D9003222BF /* ArtistsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		540501672D4CCD52003222BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		540501692D4CCD55003222BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5405016C2D4CCD55003222BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		540501732D4CD2D1003222BF /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		540501752D4CD316003222BF /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
+		540501792D4CD3D0003222BF /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		5405017B2D4CE1D9003222BF /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				540501652D4CCD52003222BF /* Harlem_1958App.swift */,
 				540501672D4CCD52003222BF /* ContentView.swift */,
+				5405017B2D4CE1D9003222BF /* ArtistsView.swift */,
+				540501732D4CD2D1003222BF /* Bundle-Decodable.swift */,
+				540501752D4CD316003222BF /* artists.json */,
+				540501792D4CD3D0003222BF /* Artist.swift */,
 				540501692D4CCD55003222BF /* Assets.xcassets */,
 				5405016B2D4CCD55003222BF /* Preview Content */,
 			);
@@ -126,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5405016D2D4CCD55003222BF /* Preview Assets.xcassets in Resources */,
+				540501762D4CD316003222BF /* artists.json in Resources */,
 				5405016A2D4CCD55003222BF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +152,9 @@
 			files = (
 				540501682D4CCD52003222BF /* ContentView.swift in Sources */,
 				540501662D4CCD52003222BF /* Harlem_1958App.swift in Sources */,
+				5405017C2D4CE1D9003222BF /* ArtistsView.swift in Sources */,
+				5405017A2D4CD3D0003222BF /* Artist.swift in Sources */,
+				540501742D4CD2D1003222BF /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

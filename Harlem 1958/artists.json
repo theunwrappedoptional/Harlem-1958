@@ -1,0 +1,987 @@
+[
+    {
+        "name": "Red",
+        "surname": "Allen",
+        "dates": "1/7/08-4/17/67",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "Henry 'Red' Allen is one of the most influential trumpet players in jazz music. His unique style, though traditional, has served as a reference for more contemporary players, such as Miles Davis. Red's upper register solos are incredible: just when you think he's at the highest point possible, he'll jump an octave. Known for his very loose playing and rhythmic 'womping,' Red joined the King Oliver band in St. Louis in 1927. In his long career he played with Coleman Hawkins, Pee Wee Russell, J.C. Higginbotham and Jelly Roll Morton.",
+        "jazzStyle": [
+            "Swing",
+            "New Orleans"
+        ],
+        "albumPicks": [
+            "World On A String--Legendary 1957 Sessions",
+            "Swing Out"
+        ]
+    },
+    {
+        "name": "Buster",
+        "surname": "Bailey",
+        "dates": "6/19/02-4/12/67",
+        "instruments": [
+            "Clarinet"
+        ],
+        "about": "Buster was a classically trained clarinet player who performed in W.C. Handy's orchestra as a teenager. In 1919 he played with Erskine Tate and King Oliver. After a stint with John Kirby's combo, he worked with Red Allen, Big Chief Moore and Wilbur de Paris.",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "Buster Bailey Story 1926-1945"
+        ]
+    },
+    {
+        "name": "Count",
+        "surname": "Basie",
+        "dates": "8/21/04-4/26/84",
+        "instruments": [
+            "Piano"
+        ],
+        "about": "Count Basie helped define the words 'jazz' and 'swing.' His style of piano playing was to-the-point and focused on the blues, relying on simple melodic phrases.\nIn 1936 he founded the Count Basie Orchestra, which featured players like Jo Jones and Lester Young. By the end of the 30s, the Basie band was one of the most popular in the world, with massive hits like 'One O'clock Jump' and 'Jumpin at the Woodside'.\nMoney was tight in the 50s and Basie was forced to shrink the band to groups with six to nine people, which included players like Clark Terry and Buddy Rich.",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "Ella & Basie",
+            "Count Basie And The Kansas City 7",
+            "Live At The Sands (Before Frank)"
+        ]
+    },
+    {
+        "name": "Emmett",
+        "surname": "Berry",
+        "dates": "7/23/15-6/22/93",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "In 1936 Emmett joined Fletcher Henderson's band and stayed until the band until it broke up in 1939. Later he played with Horace Henderson, Earl Hines and Lionel Hampton. From 1945 to 1950 Emmett played with Count Basie's band.\nLater in his career he toured with Jimmy Rushing and Buck Clayton.",
+        "jazzStyle": [
+            "Traditional"
+        ],
+        "albumPicks": [
+            "Billie Holiday - Greatest Hits",
+            "Masterpieces Vol. 17: 1929-1945, Benny Carter",
+            "The Best Of Ben Webster (1931-1944)"
+        ]
+    },
+    {
+        "name": "Art",
+        "surname": "Blakey",
+        "dates": "10/11/19-10/16/90",
+        "instruments": [
+            "Drums"
+        ],
+        "about": "Art was famous for his high-volume style of playing. His powerful relationship with the drums caused him to lose his hearing. Towards the end of his career he played with aid of the internal metronome. In the late 40s he moved to Africa for a year, learned about Islam and brought African sounds into his music.\nHis band, the Jazz Messengers, was one of the most important in the history of the art form. It lasted from the 40s to the 90s. He recruited the most creative young players, including Horace Silver, Johnny Griffin , Freddie Hubbard, Wynton Marsalis and Donald Byrd.",
+        "jazzStyle": [
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "Moanin'",
+            "At The Cafe Bohemia",
+            "A Night At Birdland, Vol 1"
+        ]
+    },
+    {
+        "name": "Scoville",
+        "surname": "Browne",
+        "dates": "10/13/09-10/4/94",
+        "instruments": [
+            "Clarinet"
+        ],
+        "about": "Scoville Browne was played a big part in the film Great Day in Harlem, as he was one of the main people interviewed by director Jean Bach. His contribution also goes back to the day the photo was taken when his close friend Milt Hinton gave him a camera to take some pictures. He then took many of the additional photos from the street that day, joking in the film that he should pat himself on the back for taking the best ones. His main style of music was be-bop and he played with many of the people in the photo. In the late 30s he started out playing with Louis Armstrong. Later he played with Count Basie, Duke Ellington, Dizzy Gillespie and Lionel Hampton.",
+        "jazzStyle": [
+            "Be-bop"
+        ],
+        "albumPicks": [
+            "Lover Man, Sarah Vaughan",
+            "Portrait Of The Artist, Louis Armstrong"
+        ]
+    },
+    {
+        "name": "Lawence",
+        "surname": "Browne",
+        "dates": "8/3/07-9/5/88",
+        "instruments": [
+            "Trombone"
+        ],
+        "about": "Lawrence Brown decided to play trombone because he could get it to sound like a cello. He was a member of Duke Ellington's orchestra from 1932 to 1951. Later he jammed with Johnny Hodges' orchestra and became a studio player for CBS. He rejoined Ellington in 1960 and stayed with him until 1970, when he left jazz music and worked for the government.",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "Ivie Anderson With Duke Ellington",
+            "Portrait Of The Artist, Louis Armstrong"
+        ]
+    },
+    {
+        "name": "Buck",
+        "surname": "Clayton",
+        "dates": "11/12/11-12/8/91",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "Buck played with many people during his lengthy career including Billie Holiday, Jimmy Rushing and Lester Young. In 1934 Buck started a band which traveled the world, including China. Two years later, Count Basie invited him to replace Hot Lips Page in his band. Buck continued playing strong throughout the 50s, 60s, 70s and even the 80s.",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "Goin' To Kansas City",
+            "Ben & Buck",
+            "A Buck Clayton Jam Session"
+        ]
+    },
+    {
+        "name": "Bill",
+        "surname": "Crump",
+        "dates": "1907-1979",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "Bill Crump had his own band in Buffalo before moving to New York. At the time of the photograph he was playing in the house band at the Apollo Theater. He also toured with Johnny Hodges (playing 2nd alto) and with Sam Cooke, Billy Eckstine, and Pearl Bailey. He recorded with the Erskine Hawkins band. Later, he moved back to Buffalo and then to Las Vegas, where he played in most of the big hotels. He died in Los Angeles in 1979 at the age of 71.",
+        "jazzStyle": [
+            "Traditional",
+            "Swing"
+        ],
+        "albumPicks": []
+    },
+    {
+        "name": "Vic",
+        "surname": "Dickenson",
+        "dates": "8/6/06-11/16/84",
+        "instruments": [
+            "Trombone"
+        ],
+        "about": "Vic could handle any tempo with his big, breathy sound. Before joining Count Basie in 1940, he worked with Benny Carter, Blanche Calloway and Claude Hopkins. In the 50s he played with Billie Holiday, Coleman Hawkins and Red Allen.",
+        "jazzStyle": [
+            "Swing",
+            "Dixieland"
+        ],
+        "albumPicks": [
+            "Breaks, Blues And Boogies",
+            "The Essential Vic Dickenson"
+        ]
+    },
+    {
+        "name": "Roy",
+        "surname": "Eldridge",
+        "dates": "1/30/11-2/26/89",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "Called the swing era's first trumpet soloist, Roy's playing was influenced by the saxophone playing of Coleman Hawkins and Benny Carter. In 1941 he broke racist social rules in the United States and played with the Gene Krupa band. Reacting to Dizzy Gillespie's tongue, Eldridge is one of the few musicians not looking at Art Kane's camera.\nIn the 50s he played with Benny Carter, Johnny Hodges, Ella Fitzgerald and Hawkins.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Roy And Diz",
+            "The Trumpet Kings Meet Joe Turner",
+            "Swingin' On The Town"
+        ]
+    },
+    {
+        "name": "Art",
+        "surname": "Farmer",
+        "dates": "9/21/28-10/4/99",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "Art's massive jams helped popularize the flugelhorn. Art played with Hampton Hawes, Charles Mingus, Horace Silver and Gerry Mulligan. In the 50s Art recorded a handful of albums on the Prestige label, playing with Art Taylor, Sonny Rollins and Kenny Clarke.",
+        "jazzStyle": [
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "Early Art",
+            "Meet The Jazztet"
+        ]
+    },
+    {
+        "name": "Bud",
+        "surname": "Freeman",
+        "dates": "4/13/06-3/15/91",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "Bud was an innovator of vintage Chicago-style jazz. He spent nine years with the very best of Chicago players, including Eddie Condon and Red Nichols. In the late 30s he appeared in a Broadway musical with Louis Armstrong and Maxine Sullivan.",
+        "jazzStyle": [
+            "Traditional"
+        ],
+        "albumPicks": [
+            "California Session",
+            "1946, Bud Freeman"
+        ]
+    },
+    {
+        "name": "Dizzy",
+        "surname": "Gillespie",
+        "dates": "10/21/17-1/6/93",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "The trumpet pioneer of bop, Dizzy was one of a small group of people who defined an entire generation of music. That style featured his furious playing, alternating between infectiously simple and complex high speed phrases.\nHe began studying the playing of Roy Eldridge. In 1937 he moved to New York and became a session player. In 1940 he met Charlie Parker in Kansas City. They developed bebop playing in after-hours jam sessions with Kenny Clarke, Thelonious Monk and Max Roach. His first bebop recording was in 1944 with Coleman Hawkins. A year later he recorded with Parker.\nSome of his famous compositions include 'Salt Peanuts', 'Woody 'N You' and 'Shaw Nuff'.",
+        "jazzStyle": [
+            "Be-bop"
+        ],
+        "albumPicks": [
+            "Diz And Getz",
+            "Dizzy's Diamonds: The Best Of Verve Years",
+            "Bird and Diz",
+            "Roy And Diz",
+            "Sonny Side Up",
+            "Swing Low, Sweet Cadillac"
+        ]
+    },
+    {
+        "name": "Tyree",
+        "surname": "Glenn",
+        "dates": "11/23/12-5/18/74",
+        "instruments": [
+            "Trombone"
+        ],
+        "about": "Tyree played with several bands, including Eddie Mallory's band, until 1939 (he was hurt in a tour bus crash). He recovered quickly and later that year he played with both Cab Calloway and Benny Carter. Later in his career he played brief stints with Duke Ellington and Louis Armstrong. He was also a studio musician and actor.",
+        "jazzStyle": [
+            "Big Band"
+        ],
+        "albumPicks": [
+            "100 Anniversaire, Duke Ellington",
+            "1947, Duke Ellington"
+        ]
+    },
+    {
+        "name": "Benny",
+        "surname": "Golson",
+        "dates": "1/25/29-9/21/24",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "Benny's sound reflects a strong hard bop with dashes of swing. Some of his more famous tunes include 'I Remember Clifford,' 'Stablemates' and 'Are You Real.' He wrote songs in the 60s and 70s for Peggy Lee, Sammy Davis, Jr. and Lou Rawls. Benny has played with Johnny Hodges, Dizzy Gillespie (from 1956-8) and Art Blakey (1959).",
+        "jazzStyle": [
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "Benny Golson Quartet",
+            "Remembering Clifford",
+            "Tenor Legacy"
+        ]
+    },
+    {
+        "name": "Sonny",
+        "surname": "Greer",
+        "dates": "12/13/1895-3/23/82",
+        "instruments": [
+            "Drums"
+        ],
+        "about": "Beyond using the drum kit to generate swinging beats, Sonny was one of the first drummers to use other percussion instruments, such as gongs and cymbals and instruments from other cultures; creating the first jungle music.\nWith the Duke Ellington orchestra, Sonny formed one of the most powerful rhythm sections of all time with bass player Jimmy Blanton. Every jazz drummer and bass player has at one time or another referenced their music. From 1919 to 1927 Sonny was a part of the Duke Ellington Cotton Club band. He left Ellington in 1951 to join Johnny Hodges' band.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Vogue Recordings, Coleman Hawkins",
+            "That's Jazz, Bing Crosby",
+            "Jungle Nights In Harlem, Duke Ellington"
+        ]
+    },
+    {
+        "name": "Johnny",
+        "surname": "Griffin",
+        "dates": "4/24/28-7/25/08",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "A talented bop player, Johnny has been able to adapt to many different musical settings. His life in music began in 1945, playing with the Lionel Hampton band for two years.\nIn the 40s and 50s he worked with Percy Heath, Philly Jo Jones, Thelonious Monk and Bud Powell. Johnny left the U.S. in 1963 because of tax and personal problems. He lived in Paris and played with Kenny Clarke, Kenny Drew, Powell and Art Taylor.",
+        "jazzStyle": [
+            "Bop",
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "The Little Giant",
+            "Thelonious In Action, Thelonious Monk",
+            "Live At Carnegie Hall, Dexter Gordon"
+        ]
+    },
+    {
+        "name": "Gigi",
+        "surname": "Gryce",
+        "dates": "11/28/27-3/17/83",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "Gigi Gryce is known for his compositions, as well as his saxophone playing . While in Paris, Gryce worked in New York with Max Roach, Tadd Dameron and Clifford Brown. In the 50's he played with Thelonious Monk, Oscar Pettiford and led the Jazz Lab Quintet (1955-58), a band featuring Donald Byrd. After 1962 he stopped playing jazz to become a teacher.",
+        "jazzStyle": [
+            "Bop",
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "Jazz Lab/Modern Jazz Perspective",
+            "Gigi Gryce And The Jazz Lab Quintet",
+            "The Rat Race Blues"
+        ]
+    },
+    {
+        "name": "Colman",
+        "surname": "Hawkins",
+        "dates": "11/21/04-5/19/69",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "A giant of of 20th century music, Coleman Hawkins popularized the tenor saxophone as the solo instrument we know today. In 1924 he joined Fletcher Henderson's band and began a tenure which lasted over a decade.\nIt is absolutely legal and very easy buy tramadol to buy Tramadol COD on our website.In 1939 Hawkins recorded his most famous composition, 'Body and Soul.'\nIt was a huge hit and innovative because of its improvisation. His 1948 composition 'Picasso' is considered the first unaccompanied saxophone solo ever recorded. Hawkins participated in early bop dates after he hired Dizzy Gillespie, Thelonious Monk and Max Roach.",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "Coleman Hawkins Encounters Ben Webster",
+            "Body and Soul",
+            "Soul",
+            "The Hawk Flies High"
+        ]
+    },
+    {
+        "name": "J.C.",
+        "surname": "Heard",
+        "dates": "10/8/17-9/27/88",
+        "instruments": [
+            "Drums"
+        ],
+        "about": "Influential as a swing drummer, J.C. played with many of jazz's most important bands and groups. In the 30s and 40s he played with Coleman Hawkins, Benny Carter and Cab Calloway.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Nice & Cool",
+            "Jug, Ammon's All Stars",
+            "Frankly Basie: Count Basie Plays The Hits Of Frank Sinatra",
+            "Blues in Thirds, Sidney Bechet"
+        ]
+    },
+    {
+        "name": "Jay C.",
+        "surname": "Higginbotham",
+        "dates": "5/11/06-5/26/73",
+        "instruments": [
+            "Trombone"
+        ],
+        "about": "Jay C.'s unique style of trombone included many harsh slurs and screams. In the 20s he worked with Luis Russell and the incredible Fletcher Henderson band. Later he worked with Chick Webb and Benny Carter, Coleman Hawkins and Louis Armstrong. Jay C. played with Red Allen and Sidney Bechet in the 40s. Check out his work as a sideman with Hawkins and Bechet. ",
+        "jazzStyle": [
+            "New Orleans"
+        ],
+        "albumPicks": [
+            "The Chronological Albert Ammons 1936-1939",
+            "Complete Quartets & Quintets: Lionel Hampton & His Orchestra",
+            "Body & Soul, Coleman Hawkins"
+        ]
+    },
+    {
+        "name": "Milt",
+        "surname": "Hinton",
+        "dates": "6/23/10-12/19/00",
+        "instruments": [
+            "Bass"
+        ],
+        "about": "Milt was called the Judge by hundreds of great jazz musicians that he played with since the 30s. In the early years he worked with Body Atkins, Erskine Tate, Zutty Singleton and Eddie South. In 1936 he joined Cab Calloway' s band.\nHe recorded with Louis Armstrong, Bing Crosby, Branford Marsalis, Lionel Hampton, Jimmy Rushing and many others. He was also a famous photographer, whose images were featured in the film 'A Great Day in Harlem.'",
+        "jazzStyle": [
+            "Be-bop",
+            "Swing"
+        ],
+        "albumPicks": [
+            "Old Man Time",
+            "Back to Bass-Ics",
+            "Trio Jeepy, Branford Marsalis"
+        ]
+    },
+    {
+        "name": "Chubby",
+        "surname": "Jackson",
+        "dates": "10/25/18-10/1/03",
+        "instruments": [
+            "Bass"
+        ],
+        "about": "Chubby was raised in Long Island and played clarinet until the age of 16, when he found the bass. He moved to New York and played with several bands until meeting up with Woody Herman, who he played with during different times in the 40s and 50s. In the 50s he wrote music for children's television and played with Louis Armstrong. Later he played with Harold Baker and Joe Coleman's Big Four.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Live at the Swiss Chalet, Ella Fitzgerald",
+            "With Chubby Jackson Big Band, Chet Baker, Gerry Mulligan Quartet"
+        ]
+    },
+    {
+        "name": "Hilton",
+        "surname": "Jefferson",
+        "dates": "7/30/03-11/14/68",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "His first gigs were playing the banjo with the Julian Arthur Orchestra at the Hay Theater in Philadelphia in 1925. In the 30s he played with many bands in New York City, including Claude Hopkins, Chick Webb and King Oliver. Later Hilton played with McKinney's Cotton Pickers, Benny Carter and Fletcher Henderson. In the 40s he was in the bands of Duke Ellington, Ella Fitzgerald and Cab Calloway.",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "The Best Of Ben Webster (1931-1944)",
+            "Buster Bailey Story 1926-1945"
+        ]
+    },
+    {
+        "name": "Osie",
+        "surname": "Johnson",
+        "dates": "1/11/23-2/10/66",
+        "instruments": [
+            "Drums"
+        ],
+        "about": "Osie worked with Clark Terry in the Navy band 1944-45 and then freelanced around Chicago until hooking up with Earl Hines. He could be heard playing at Minton's Playhouse with Tony Scott, or backing Dorthy Donegan, and toured Europe with Illinois Jacquet, all in the 1950s. Mostly he was a session musicians in the New York television and recording studios. His arrangements included a hit by singer Dinah Washington, 'Fool That I Am,' and can be heard on his own dates.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Osie's Oasis",
+            "Best Of Mose Allison"
+        ]
+    },
+    {
+        "name": "Hank",
+        "surname": "Jones",
+        "dates": "7/13/18-5/16/10",
+        "instruments": [
+            "Piano"
+        ],
+        "about": "Hank is the oldest brother of the Jones jazz family (the others are Thad and Elvin). In 1944 he went to New York and first played with Hot Lips Page, followed by Coleman Hawkins, Billy Eckstine, Howard McGhee and Andy Kirk and. In the 1950s he played with Lester Young, Cannonball Adderley, Artie Shaw and Benny Goodman and many others. He was a CBS studio musician during the 60's and 70's, but kept played jazz.",
+        "jazzStyle": [
+            "Swing",
+            "Bop"
+        ],
+        "albumPicks": [
+            "Bluebird",
+            "Tiptoe Tapdance",
+            "Just For Fun"
+        ]
+    },
+    {
+        "name": "Jimmy",
+        "surname": "Jones",
+        "dates": "12/30/18-4/29/82",
+        "instruments": [
+            "Piano"
+        ],
+        "about": "Jimmy Jones started his career in Chicago with Stuff Smith. Later he moved to New York and played with J.C. Heard and Sara Vaughn (from 1947 to 1952 and then from 1954 to 1958). Later in his career he played with Ella Fitzgerald and on movie soundtracks and television programs.",
+        "jazzStyle": [
+            "Traditional"
+        ],
+        "albumPicks": [
+            "Count Basie, Lester Young And The Stars Of Birdland",
+            "On Tour!",
+            "Sidney Bechet 1937-38"
+        ]
+    },
+    {
+        "name": "Jo",
+        "surname": "Jones",
+        "dates": "10/7/11-9/3/85",
+        "instruments": [
+            "Drums"
+        ],
+        "about": " Jo's drumming style was versatile and dynamic. His style wasn't as outrageous as Buddy Rich or Gene Krupa; instead he worked with the subtleties of a rim shot or nuances of the hi-hat.\nIn 1934 he joined the Count Basie band and remained there until 1948. He also worked with artists like Coleman Hawkins, Jimmy Rushing, Billie Holiday, Art Tatum, Lester Young and Duke Ellington. ",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "The Essential Jo Jones",
+            "The Main Man"
+        ]
+    },
+    {
+        "name": "Taft",
+        "surname": "Jordan",
+        "dates": "2/15/18-11/1/81",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "Taft moved from Virginia to Philadelphia early in his career and played with George 'Doc' Hyder. In 1933 Taft joined the Chick Webb band and remained there until Chick's passing in 1939. In 1941 he moved from working with Ella Fitzgerald to leading his own band at the Savoy. From 1943 to 1947 Taft played with Duke Ellington. Later in his career he played with Benny Goodman.",
+        "jazzStyle": [
+            "New Orleans"
+        ],
+        "albumPicks": [
+            "Mood Indigo",
+            "1937-43, Count Basie"
+        ]
+    },
+    {
+        "name": "Max",
+        "surname": "Kaminsky",
+        "dates": "9/7/09-9/6/94",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "A traditional player who was influenced by Louis Armstrong, Max began his career in Boston in the 20s before moving on to Chicago to play with George Wettling and Frank Teschemaker. In the 30s Max recorded with Eddie Condon, Bennny Carter, Bud Freeman and Artie Shaw. The 40s was a period of reviving the tradition of the music for Max, especially when he played with Sindey Bechet, Art Hodes, Willie the Lion Smith and Joe Marsala.",
+        "jazzStyle": [
+            "Dixieland"
+        ],
+        "albumPicks": [
+            "Max & Pee Wee at the Copley Terrace"
+        ]
+    },
+    {
+        "name": "Gene",
+        "surname": "Krupa",
+        "dates": "1/15/09-10/16/73",
+        "instruments": [
+            "Drums"
+        ],
+        "about": "Gene Krupa helped popularize the role of the drummer in mainstream jazz music. He showed that the drummer wasn't just a guy who made noise, but one of the most important sources of energy in the band. Though he spent much of his time playing with white bands, Krupa earned respect from many African-American musicians.\nKrupa started in the 20s in Chicago and met up with Benny Goodman. He played with Goodman from 1935-38 before starting his own bands. In 1944 he joined Tommy Dorsey's band before going solo again.",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "Drummer Man",
+            "Let Me Off Uptown"
+        ]
+    },
+    {
+        "name": "Eddie",
+        "surname": "Locke",
+        "dates": "2/8/30-9/7/09",
+        "instruments": [
+            "Drums"
+        ],
+        "about": "Eddie moved to New York in 1954 and played with Willie 'the Lion' Smith, Henry 'Red' Allen, Roy Eldridge and Coleman Hawkins. He remained in Hawkins' band on and off through the 1960's. In the 70's he played with Eldridge's band and continued playing through the 1990's.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Roy Eldridge & Vic Dickenson With Eddie Locke & His Friends",
+            "Today And Now, Coleman Hawkins",
+            "Always Say Goodbye, Charlie Haden"
+        ]
+    },
+    {
+        "name": "Marian",
+        "surname": "McPartland",
+        "dates": "3/20/20-8/20/13",
+        "instruments": [
+            "Piano"
+        ],
+        "about": "Marian has played many different styles of piano in her career as a jazz pianist. Her compositions have been recorded by Sarah Vaughn, Tony Bennett and Thad Jones. She is most famous for her show on National Public Radio, 'Marian McPartland's Piano Jazz,' where she has hosted the biggest names in jazz music as guests.",
+        "jazzStyle": [
+            "Swing",
+            "Bop"
+        ],
+        "albumPicks": [
+            "Piano Jazz With Milt Hinton",
+            "Piano Jazz With Benny Carter",
+            "Piano Jazz With Dizzy Gillespie"
+        ]
+    },
+    {
+        "name": "Charles",
+        "surname": "Mingus",
+        "dates": "4/22/22-1/5/79",
+        "instruments": [
+            "Bass"
+        ],
+        "about": "Besides being one of the most dynamic bass players, Mingus' compositions rank him as one of the true innovators of jazz music. His songs range from jamming blues numbers for small groups that have influenced rock musicians to pieces for large bands that have the complexity of classical arrangements. Some of his most famous compositions include, 'Goodbye Pork Pie Hat,' 'Wednesday Night Prayer Meeting' and 'Orange Was the Color of Her Dress.' His arrangements were always cutting edge, rivaled in genius only by Duke Ellington. While Ellington is the most important musician of the 20th century, the compositions of Mingus could prove as or more influential in the next century.\nDuring his long career he played with all the greats, including Lionel Hampton, Ellington, Stan Getz, Art Tatum and Bud Powell. Mingus also played a role in the bebop revolution and was part of the historic Massey Hall concert in 1953, which featured Charlie Parker, Dizzy Gillespie, Powell and Max Roach. His wife has help set up a web site dedicated to his music.",
+        "jazzStyle": [
+            "Post Bop"
+        ],
+        "albumPicks": [
+            "Pithecanthropus Erectus",
+            "Mingus Ah Um",
+            "Blues & Roots",
+            "Complete 1959 Columbia Recordings"
+        ]
+    },
+    {
+        "name": "Miff",
+        "surname": "Mole",
+        "dates": "3/11/1898-4/29/61",
+        "instruments": [
+            "Trombone"
+        ],
+        "about": "Miff began playing violin and later accompanied silent pictures on the piano in a local movie house. His career in jazz music began in Brooklyn, and progressed when he played at the Alamo Club with band leader/comedian Jimmy Durante. He joined the Original Memphis Five and played on and off with them until the mid 20s. During his lengthy career he was a radio studio musician and went through periods of hiatus in jazz music. His last gig was in 1960 with Pee Wee Russell.",
+        "jazzStyle": [
+            "Traditional"
+        ],
+        "albumPicks": [
+            "Vol. 1-Slippin' Around",
+            "1925-1927"
+        ]
+    },
+    {
+        "name": "Thelonious",
+        "surname": "Monk",
+        "dates": "10/10/17-2/17/82",
+        "instruments": [
+            "Piano"
+        ],
+        "about": "Monk's compositions are some of the best in jazz. His most famous songs include, 'Round Midnight,' 'Brilliant Corners,' 'Pannonica' and 'Straight, No Chaser.' His style of piano playing, with its constant challenges to traditional rhythm and harmony, is the most distinctive in the history of the music. Monk created musical drama that felt like watching a house of cards teeter back and forth but never fall.\nHis recording debut came in 1944 in Coleman Hawkins' band. He helped develop the bebop sound with Charlie Parker, Dizzy Gillespie and Kenny Clarke. From 1951 to 1957 Monk was prohibited from playing some of the bigger jazz clubs in New York because of the 'cabaret card' law. Later Monk recorded with Sonny Rollins and John Coltrane. Like Lester Young, he was considered one of the true original personalities in jazz.",
+        "jazzStyle": [
+            "Post bop"
+        ],
+        "albumPicks": [
+            "Thelonious Monk & Sonny Rollins",
+            "Brilliant Corners",
+            "Thelonious Monk With John Coltrane",
+            "Genius Of Modern Music Vol. 1"
+        ]
+    },
+    {
+        "name": "Gerry",
+        "surname": "Mulligan",
+        "dates": "4/6/27-1/20/96",
+        "instruments": [
+            "Cool"
+        ],
+        "about": "In 1946 Gerry moved to New York and became an arranger for Gene Krupa's Orchestra. He rarely played with the orchestra and only on alto sax, not baritone which he became famous for after recording on Miles Davis' 'Birth of the Cool' album. His speed and agility on the baritone sax gave him a reputation as a great improviser. Across his long, successful career he easily adapted to many styles, recording with Chet Baker, Monk, Dave Brubeck, Ben Webster and Duke Ellington.",
+        "jazzStyle": [
+            "Cool"
+        ],
+        "albumPicks": [
+            "The Complete Gerry Mulligan Meets Ben Webster",
+            "The Original Quartet With Chet Baker",
+            "The Complete Blue Note & Pacific Jazz Recordings, Clifford Brown"
+        ]
+    },
+    {
+        "name": "Oscar",
+        "surname": "Pettiford",
+        "dates": "9/30/22-9/8/60",
+        "instruments": [
+            "Bass"
+        ],
+        "about": "Born on a Native American reservation in Oklahoma, Oscar played in a family band of ten children that became popular in the west. In 1942 he went to New York and worked with Roy Eldridge. Later he worked with Coleman Hawkins, Earl Hines and Ben Webster. In 1944 Oscar co-led a group with Dizzy Gillespie. He also was part of the Duke Ellington Orchestra from 1945 to 1948.",
+        "jazzStyle": [
+            "Be Bop"
+        ],
+        "albumPicks": [
+            "The New Oscar Pettiford Sextet",
+            "Bass By Pettiford/Burke",
+            "Montmartre Blues"
+        ]
+    },
+    {
+        "name": "Rudy",
+        "surname": "Powell",
+        "dates": "10/28/07-10/30/76",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "In 1928 Rudy joined Gene Rodger's Revellers. By the end of the year he was playing with Cliff Jackson's Krazy Kats, where he remained a fixture until 1931. From 1934 to 1937 he played with Fats Waller's group. He also played in Fletcher Henderson's band, Cab Calloway and Jimmy Rushing's Kansas City Seven. Later in his career he played with Ray Charles.",
+        "jazzStyle": [
+            "Traditional"
+        ],
+        "albumPicks": [
+            "The Complete Decca Recordings, Billie Holiday",
+            "Jumpin' Jive, Cab Calloway",
+            "Ain't Misbehavin', Fats Waller",
+            "Genius & Soul: The 50th Anniversary Collection, Ray Charles"
+        ]
+    },
+    {
+        "name": "Lucky",
+        "surname": "Roberts",
+        "dates": "8/7/1887-2/5/68",
+        "instruments": [
+            "Piano"
+        ],
+        "about": "Luckey Roberts was one of the first 'stride' piano players, who pioneered the style with Willie 'The Lion' Smith (who was at the photo shoot, but doesn't appear in the final shot). As a child, Luckey toured with acts like Gus Seekes' Pickaninnies and Mayne Remington's Ethopian Prodigies. In 1910 Luckey moved to New York City and began playing at the Little Savoy Club. During the 20s and 30s Luckey became famous as a composer and producers of vaudeville shows. By the 30s he had 14 of his musical comedies produced. From 1940 to 1954 he owned the Rendezvous Club in New York City. He played until shortly before his death, surviving a serious car crash and two strokes.",
+        "jazzStyle": [
+            "Traditional"
+        ],
+        "albumPicks": [
+            "Luckey & The Lion - Harlem Piano",
+            "The Circle Recordings"
+        ]
+    },
+    {
+        "name": "Sonny",
+        "surname": "Rollins",
+        "dates": "9/7/30-",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "Sonny Rollins has been a powerful force in jazz since the early 1950s. Sonny is the king of the calypso jazz mode. His first jazz records were cut in 1948 with Babs Gonzales. After this beginning he played with Miles Davis, Thelonious Monk, Bud Powell, Art Blakey and Tadd Dameron. One of his important career highs came in 1955, playing with the Clifford Brown/Max Roach quintet. He continued recording and performing through the 1990s, becoming one of the most influential saxophone players in jazz.",
+        "jazzStyle": [
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "Saxophone Colossus",
+            "Way Out West",
+            "Best of the Complete Sonny Rollins RCA Victor Recordings",
+            "Night At The Village Vanguard "
+        ]
+    },
+    {
+        "name": "Jimmy",
+        "surname": "Rushing",
+        "dates": "8/26/03-6/8/72",
+        "instruments": [
+            "Voice"
+        ],
+        "about": "Jimmy is credited with influencing many vocalists in many different genres, ranging from blues to jazz to rock. His unique style was very funky and featured many hollers and yells. In 1936 he joined the Count Basie band and recorded many different types of songs with the band until 1950. He also played with Earl Hines, Dave Brubeck and Buck Clayton.",
+        "jazzStyle": [
+            "Big Band",
+            "Swing"
+        ],
+        "albumPicks": [
+            "Everyday I Have The Blues/Livin' The Blues",
+            "The Essential Jimmy Rushing"
+        ]
+    },
+    {
+        "name": "Pee Wee",
+        "surname": "Russel",
+        "dates": "3/27/06-2/15/69",
+        "instruments": [
+            "Clarinet"
+        ],
+        "about": "Pee Wee played piano and violin before the clarinet. In the 20s and 30s he played with many of the most popular bands on both coasts. In 1963 he started an innovative group with trombone player Marshall Brown, which played compositions of contemporary players, like John Coltrane and Ornette Coleman.",
+        "jazzStyle": [
+            "Dixieland"
+        ],
+        "albumPicks": [
+            "Jazz Original",
+            "Jack Teagarden's Big Eight/Pee Wee Russell's Rhythmakers",
+            "Max & Pee Wee at the Copley Terrace",
+            "We're In The Money"
+        ]
+    },
+    {
+        "name": "Sahib",
+        "surname": "Shihab",
+        "dates": "6/23/25-10/24/89",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "Sahib Shihab (Edmund Gregory) played with many of jazz's finest musicians. Shortly after he became one of the first jazz players to change their names due to an Islamic conversion, he joined Thelonious Monk for his famous Blue Note sessions. He also played with Art Blakey, Dizzy Gillespie, Oscar Pettiford and Quincy Jones. In 1963 he moved to Europe, where he toured and recorded with the Clarke/Boland Big Band, co-led by drummer Kenny Clarke and pianist Francy Boland.",
+        "jazzStyle": [
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "Conversations",
+            "And All Those Cats"
+        ]
+    },
+    {
+        "name": "Horace",
+        "surname": "Silver",
+        "dates": "9/2/28-6/18/14",
+        "instruments": [
+            "Piano"
+        ],
+        "about": "Blending old-school R&B, church music, blues and Caribbean sounds in his compositions and piano playing, Horace was a leading hardbop pioneer. He was a founding member of Art Blakey's Jazz Messengers, helping introduce such talent as Donald Byrd, Art Farmer, Woody Shaw and Blue Mitchell. Horace has worked with greats like Coleman Hawkins, Lou Donaldson, Hank Mobley, Joe Henderson and Stan Getz. Horace continued to create high-quality jazz records through the 1990s.",
+        "jazzStyle": [
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "Horace Silver & The Jazz Messengers",
+            "Song For My Father",
+            "Best Of Horace Silver - The Blue Note Years"
+        ]
+    },
+    {
+        "name": "Horace",
+        "surname": "Silver",
+        "dates": "9/2/28-6/18/14",
+        "instruments": [
+            "Piano"
+        ],
+        "about": "Blending old-school R&B, church music, blues and Caribbean sounds in his compositions and piano playing, Horace was a leading hardbop pioneer. He was a founding member of Art Blakey's Jazz Messengers, helping introduce such talent as Donald Byrd, Art Farmer, Woody Shaw and Blue Mitchell. Horace has worked with greats like Coleman Hawkins, Lou Donaldson, Hank Mobley, Joe Henderson and Stan Getz. Horace continued to create high-quality jazz records through the 1990s.",
+        "jazzStyle": [
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "Horace Silver & The Jazz Messengers",
+            "Song For My Father",
+            "Best Of Horace Silver - The Blue Note Years"
+        ]
+    },
+    {
+        "name": "Zutty",
+        "surname": "Singleton",
+        "dates": "5/14/1898-7/14/75",
+        "instruments": [
+            "Drums"
+        ],
+        "about": "Zutty's first gigs were at the Rosebud Theater with Steve Lewis in 1915. He went to Europe to fight in World War I and came back on the injured list and became a chauffeur. Driving cars for a living didn't last long; Zutty joined Tom's Roadhouse Band in New Orleans.\nAfter playing in a handful of bands in New Orleans, he moved up to St. Louis to play with Charlie Creath. He moved back to New Orleans and jammed with legends Earl Hines and Louis Armstrong in 1927. In 1931 he moved to New York City to play with jazz god Fats Waller. In the late 30s he lead his own group and played with Roy Eldridge. Through the 50s and 60s he played with a plethora of bands.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Swing Out",
+            "Last Testament: His Final Recordings, Fats Waller"
+        ]
+    },
+    {
+        "name": "Stuff",
+        "surname": "Smith",
+        "dates": "8/14/09-9/25/67",
+        "instruments": [
+            "Violin"
+        ],
+        "about": "Dizzy Gillespie has given Stuff Smith credit for showing him that an artist could engage in art and entertain at the same time. Stuff played with Nat King Cole, Jelly Roll Morton, Ella Fitzgerald and Oscar Peterson.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "1936-1939",
+            "Live At The Montmartre",
+            "Stuff Smith/Dizzy Gillespie/Oscar Peterson"
+        ]
+    },
+    {
+        "name": "Rex",
+        "surname": "Stewart",
+        "dates": "2/22/07-9/7/67",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "Rex played cornet for eleven years with the Duke Ellington Orchestra. He was one of the many musicians that Ellington recruited for having a unique musical style. Several Ellington compositions have solos and passages that were written specifically with Rex's cornet in mind.\nAfter departing from Ellington's band, Rex went on tour through Europe and Australia. Later in life he took residence in New Jersey to run a farm and worked in radio and television.",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "And The Ellingtonians",
+            "A Study In Frustration, Fletcher Henderson",
+            "Rexatious:His Greatest Recordings"
+        ]
+    },
+    {
+        "name": "Maxine",
+        "surname": "Sullivan",
+        "dates": "5/13/11-4/7/87",
+        "instruments": [
+            "Voice"
+        ],
+        "about": "Maxine enjoyed great success as a vocalist in the swing era and then later as a pre-rock pop singer. Her first hit was in 1937 with the song Loch Lomond. In 1940 Maxine co-hosted a nation-wide radio program called Flow Gently Sweet Rhythm. At the time it was the only coast-to-coast radio show that featured African-American performers as the MCs. After some acting, Maxine became a nurse in 1953. Five years later she returned to music, singing and playing flugelhorn and trombone.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Swingin' Sweet",
+            "Love...Always"
+        ]
+    },
+    {
+        "name": "Joe",
+        "surname": "Thomas",
+        "dates": "1909-1984",
+        "instruments": [
+            "Trumpet"
+        ],
+        "about": "Joe Thomas was a much admired trumpeter who played throughout the Midwest before moving to New York. There he played with Fletcher Henderson, Claude Hopkins, Benny Carter, Teddy Wilson, and various other popular bands. He could also stay busy by freelancing and played with Cozy Cole, Bud Freeman, Barney Bigard, Buck Clayton, Vic Dickenson, Coleman Hawkins, and other top-notch musicians. Occasionally he put together his own band to perform in a club or to make a record.",
+        "jazzStyle": [
+            "Swing",
+            "Traditional"
+        ],
+        "albumPicks": [
+            "Coleman Hawkins All Stars, Swingville",
+            "Vic Dickenson and Joe Thomas and their All Star Groups: Mainstream"
+        ]
+    },
+    {
+        "name": "Wilbur",
+        "surname": "Ware",
+        "dates": "9/8/23-9/9/79",
+        "instruments": [
+            "Bass"
+        ],
+        "about": "Wilbur is famous for his percussive approach to the bass, laying the beats down low with a heavy tone. After working in Chicago based bands, he played with groups led by Stuff Smith, Roy Eldridge In the 50s he recorded with Art Blakey , Johnny Griffin and Thelonious Monk. In 1969 he played with Clifford Jordan, Elvin Jones and Sonny Rollins.",
+        "jazzStyle": [
+            "Hard Bop"
+        ],
+        "albumPicks": [
+            "The Chicago Sound",
+            "Thelonious Monk With John Coltrane"
+        ]
+    },
+    {
+        "name": "Dicky",
+        "surname": "Wells",
+        "dates": "6/10/07-11/12/85",
+        "instruments": [
+            "Bass"
+        ],
+        "about": "Dicky is one of swing's greatest trombone players. His style featured a blend of gritty blues with fluid solos. In the early 30s he played with Fletcher Henderson, Benny Carter and Spike Hughes. From 1938 to 1945 he played in Count Basie's band. Later he played toured with Jimmy Rushing and B.B. King. ",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "Goin' To Kansas City",
+            "The Complete Decca Recordings, Billie Holiday"
+        ]
+    },
+    {
+        "name": "George",
+        "surname": "Wettling",
+        "dates": "11/28/07-6/6/68",
+        "instruments": [
+            "Drums"
+        ],
+        "about": "George had a lengthy career that spanned over forty years. He transcended musical styles, playing in Dixieland bands, swing and traditional New Orleans outfits. He spent most of the 20s in Chicago and went on to work with the orchestras of Artie Shaw, Bunny Berigan, Red Norvo and Paul Whiteman in the 30s and 40s. In the 50s he was beatman at ABC studios and played with Billie Holiday, Pee Wee Russell, Bud Freeman and Sidney Bechet.",
+        "jazzStyle": [
+            "Dixieland"
+        ],
+        "albumPicks": [
+            "1938-1940, Willie 'The Lion' Smith",
+            "The Complete Decca Recordings, Billie Holiday"
+        ]
+    },
+    {
+        "name": "Ernie",
+        "surname": "Wilkins",
+        "dates": "7/20/22-6/5/99",
+        "instruments": [
+            "Drums"
+        ],
+        "about": "Ernie Wilkins played with the bands of Earl Hines, Count Basie, Dizzy Gillespie, Maynard Ferguson, Sy Oliver, Clark Terry and Lionel Hampton. He arranged, conducted and recorded with many of jazz music's big names.\nStarting in 1980 Ernie Wilkins lived in Copenhagen and worked in Europe as a guest with various big bands, as a soloist and as guest arranger with radio bands. In August, 1980 his own orchestra 'Ernie Wilkins and his Almost Big Band' had its premiere in Tivoli, Copenhagen.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Brownie: The Complete Emarcy Recordings, Clifford Brown",
+            "Greatest Hits, Cannonball Adderley"
+        ]
+    },
+    {
+        "name": "Mary Lou",
+        "surname": "Williams",
+        "dates": "5/8/10-5/28/81",
+        "instruments": [
+            "Piano"
+        ],
+        "about": "Mary Lou was a superb pianist and important arranger. Her style blended boogie-woogie and swing. A child prodigy, at 13 she was working vaudeville shows. By 19 she was the pianist and arranger for the incredibly popular Andy Kirk band. She was one of the first women in jazz who truly crossed gender lines.\nMary Lou also wrote arrangements for Benny Goodman, Earl Hines and Tommy Dorsey. Some of her more famous songs were 'Walkin' and Swingin',' 'Little Joe From Chicago' and 'Satchel-Mout Baby.' Mary Lou also worked with Duke Ellington and Dizzy Gillespie. In 1954 she left the jazz world to become a Catholic, returning a few years later. Towards the end of her life she taught at Duke University, which hosts the Mary Lou Williams Center for Black Culture.",
+        "jazzStyle": [
+            "Swing",
+            "Big Band"
+        ],
+        "albumPicks": [
+            "Live At The Cookery",
+            "The Zodiac Suite"
+        ]
+    },
+    {
+        "name": "Lester",
+        "surname": "Young",
+        "dates": "9/27/09-3/15/59",
+        "instruments": [
+            "Saxophone"
+        ],
+        "about": "Lester Young's original style of saxophone playing combined the light sounds of Jimmy Dorsey with the alternative fingerings and effects to create a darker, bluesier tone. Hundreds of sax players have copied his style or mentioned him as a primary influence. His personality and style of dress were also part of his legend (his porkpie hat insired the Mingus elegiac composition 'Goodbye Porkpie Hat'.\nIn the 30s he played with Walter Page, Charlie Christian, Fletcher Henderson and Coleman Hawkins. In 1934 he played in Count Basie's band for the first time. Lester was nick named Pres by Billie Holiday and later toured with Dizzy Gillespie. In 1944 he was drafted into the army and was court martialed for drug use in 1945. In the mid 50s he made a comeback with Jo Jones, Freddie Green and Roy Eldridge.",
+        "jazzStyle": [
+            "Swing"
+        ],
+        "albumPicks": [
+            "Lester Young Trio",
+            "The Complete Aladdin Recordings Of Lester Young",
+            "Complete Studio Sessions on Verve",
+            "With the Oscar Peterson Trio"
+        ]
+    }
+]
