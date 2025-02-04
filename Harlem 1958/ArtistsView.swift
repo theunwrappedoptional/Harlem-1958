@@ -11,10 +11,19 @@ struct ArtistsView: View {
     
     var artists:[Artist]
     
+    //TODO: Add birth date sort
+    //TODO: Add name + surname option
+    
+    @State private var sortKey:KeyPath<Artist, String> = \Artist.name
+    
+    var sortedArtists: [Artist] {
+        return artists.sorted { $0[keyPath: sortKey] < $1[keyPath: sortKey]}
+    }
+    
     var body: some View {
         NavigationStack{
             List {
-                ForEach(artists) { artist in
+                ForEach(sortedArtists) { artist in
                     NavigationLink(value: artist) {
                         HStack{
                             Text("\(artist.name)  \(artist.surname)")
@@ -24,7 +33,22 @@ struct ArtistsView: View {
                     }
                 }
             }
+//            .listStyle(.plain)
             .navigationTitle("Harlem 1958")
+            .toolbar{
+                Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                    Picker("Sort", selection: $sortKey) {
+                        
+                        Text("Name")
+                            .tag(\Artist.name)
+                        
+                        Text("Surname")
+                            .tag(\Artist.surname)
+
+                    }
+                }
+            }
+
         }
     }
 }

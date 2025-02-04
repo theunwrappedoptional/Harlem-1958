@@ -22,12 +22,18 @@ struct Artist: Codable, Identifiable, Hashable {
         name + " " + surname
     }
     
+    var fullSurname: String {
+        surname + " " + name
+    }
+    
     var birth: String {
         return dates.split(separator: "-").map{String($0)}[0]
     }
+    // TODO: Fix the birth date format
     
     var death: String {
         return dates.split(separator: "-").map{String($0)}[1]
     }
+    // TODO: Fix the death date format
     
 }
