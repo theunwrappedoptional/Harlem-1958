@@ -26,14 +26,53 @@ struct Artist: Codable, Identifiable, Hashable {
         surname + " " + name
     }
     
-    var birth: String {
-        return dates.split(separator: "-").map{String($0)}[0]
+    var birthDate: Date? {
+        let birthString = dates.split(separator: "-").map{String($0)}[0]
+        let birthStringFormatted = formatDateString(from: birthString)
+        return dateFromString(birthStringFormatted)
     }
-    // TODO: Fix the birth date format
     
-    var death: String {
-        return dates.split(separator: "-").map{String($0)}[1]
+    var deathDate: Date? {
+        guard dates.last != "-" else {
+            return nil
+        }
+        let deathString = dates.split(separator: "-").map{String($0)}[1]
+        let deathStringFormatted = formatDateString(from: deathString)
+        return dateFromString(deathStringFormatted)
     }
-    // TODO: Fix the death date format
+    
+    var birthString: String {
+        return birthDate?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
+    }
+    
+    var deathString: String {
+        return deathDate?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
+    }
+    
+    private func dateFromString(_ s: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        dateFormatter.locale = .current
+        return dateFormatter.date(from: s)
+    }
+    
+    private func formatDateString(from dateString: String) -> String {
+        var components = dateString.split(separator: "/").map{String($0)}
+        
+        if components.count == 3 {
+            for (index, item) in components.enumerated() {
+                if index != 2 {
+                    if item.count == 1 {
+                        components[index] = "0" + item
+                    }
+                } else {
+                    if item.count == 2 {
+                        components[index] = "19" + item
+                    }
+                }
+            }
+        }
+        return components.joined(separator: "/")
+    }
     
 }

@@ -11,13 +11,32 @@ struct ArtistsView: View {
     
     var artists:[Artist]
     
-    //TODO: Add birth date sort
+    //TODO: Check deathDate = nil case in comparison
     //TODO: Add name + surname option
     
-    @State private var sortKey:KeyPath<Artist, String> = \Artist.name
+    enum SortOption: String, CaseIterable, Identifiable {
+        case name = "Name"
+        case surname = "Surname"
+        case birth = "Birth"
+
+        var id: String { rawValue }
+    }
+    
+    private var sortKey: (Artist, Artist) -> Bool {
+        switch selectedSortOption {
+            case .name:
+                return { $0.name < $1.name }
+            case .surname:
+                return { $0.surname < $1.surname }
+            case .birth:
+                return { $0.birthDate! < $1.birthDate! }
+        }
+    }
+    
+    @State private var selectedSortOption: SortOption = .name
     
     var sortedArtists: [Artist] {
-        return artists.sorted { $0[keyPath: sortKey] < $1[keyPath: sortKey]}
+        return artists.sorted(by: sortKey)
     }
     
     var body: some View {
@@ -28,7 +47,7 @@ struct ArtistsView: View {
                         HStack{
                             Text("\(artist.name)  \(artist.surname)")
                             Spacer()
-                            Text("\(artist.birth)")
+                            Text(artist.birthString)
                         }
                     }
                 }
@@ -37,14 +56,10 @@ struct ArtistsView: View {
             .navigationTitle("Harlem 1958")
             .toolbar{
                 Menu("Sort", systemImage: "arrow.up.arrow.down") {
-                    Picker("Sort", selection: $sortKey) {
-                        
-                        Text("Name")
-                            .tag(\Artist.name)
-                        
-                        Text("Surname")
-                            .tag(\Artist.surname)
-
+                    Picker("Sort", selection: $selectedSortOption) {
+                        ForEach(SortOption.allCases) { option in
+                            Text(option.rawValue).tag(option)
+                        }
                     }
                 }
             }
