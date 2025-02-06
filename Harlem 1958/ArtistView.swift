@@ -22,18 +22,21 @@ struct ArtistView: View {
                     .padding([.leading, .trailing,.top], 50)
                     .padding(.bottom, 30)
                 
-                Text("🎂 \(artist.birthString)")
-                Text("🪦 \(artist.deathString)")
+                Text("\(artist.birthString)")
+                Text("\(artist.deathString)")
                     .padding(2)
                 
                 Text("\(artist.instruments.joined(separator: ",")) ")
                     .padding()
                 
+                Text("\(artist.jazzStyle.joined(separator: "\n")) ")
+                    .multilineTextAlignment(.center)
+                
                 Text(artist.about)
                     .padding()
                 
                 Text("\(artist.albumPicks.joined(separator: "\n")) ")
-                    .padding()
+                    .multilineTextAlignment(.center)
             }
             
         }

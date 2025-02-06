@@ -16,6 +16,8 @@
 		5405017A2D4CD3D0003222BF /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540501792D4CD3D0003222BF /* Artist.swift */; };
 		5405017C2D4CE1D9003222BF /* ArtistsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405017B2D4CE1D9003222BF /* ArtistsView.swift */; };
 		54515D462D54D06D0072AF22 /* ArtistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54515D452D54D06D0072AF22 /* ArtistView.swift */; };
+		54F0DED72D5516C4000C2385 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0DED62D5516C4000C2385 /* Artists.swift */; };
+		54F0DED92D552DEC000C2385 /* InstrumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0DED82D552DEC000C2385 /* InstrumentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		540501792D4CD3D0003222BF /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		5405017B2D4CE1D9003222BF /* ArtistsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsView.swift; sourceTree = "<group>"; };
 		54515D452D54D06D0072AF22 /* ArtistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistView.swift; sourceTree = "<group>"; };
+		54F0DED62D5516C4000C2385 /* Artists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artists.swift; sourceTree = "<group>"; };
+		54F0DED82D552DEC000C2385 /* InstrumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +68,12 @@
 				540501652D4CCD52003222BF /* Harlem_1958App.swift */,
 				540501672D4CCD52003222BF /* ContentView.swift */,
 				5405017B2D4CE1D9003222BF /* ArtistsView.swift */,
+				54F0DED82D552DEC000C2385 /* InstrumentsView.swift */,
 				54515D452D54D06D0072AF22 /* ArtistView.swift */,
 				540501732D4CD2D1003222BF /* Bundle-Decodable.swift */,
 				540501752D4CD316003222BF /* artists.json */,
 				540501792D4CD3D0003222BF /* Artist.swift */,
+				54F0DED62D5516C4000C2385 /* Artists.swift */,
 				540501692D4CCD55003222BF /* Assets.xcassets */,
 				5405016B2D4CCD55003222BF /* Preview Content */,
 			);
@@ -155,10 +161,12 @@
 			files = (
 				540501682D4CCD52003222BF /* ContentView.swift in Sources */,
 				540501662D4CCD52003222BF /* Harlem_1958App.swift in Sources */,
+				54F0DED72D5516C4000C2385 /* Artists.swift in Sources */,
 				5405017C2D4CE1D9003222BF /* ArtistsView.swift in Sources */,
 				5405017A2D4CD3D0003222BF /* Artist.swift in Sources */,
 				540501742D4CD2D1003222BF /* Bundle-Decodable.swift in Sources */,
 				54515D462D54D06D0072AF22 /* ArtistView.swift in Sources */,
+				54F0DED92D552DEC000C2385 /* InstrumentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

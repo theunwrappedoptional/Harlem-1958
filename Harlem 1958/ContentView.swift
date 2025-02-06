@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let artists: [Artist] = Bundle.main.decode("artists.json")
+    @State private var artists = Artists()
     
     var body: some View {
         TabView {
-            ArtistsView(artists: artists)
+            ArtistsView()
                 .tabItem {
                     Label("Artists", systemImage: "person.3.fill")
                 }
-            Text("Instruments")
+            InstrumentsView()
                 .tabItem {
                     Label("Instruments", systemImage: "music.mic")
                     // TODO: Find a better icon for "Instruments"
@@ -28,6 +28,7 @@ struct ContentView: View {
                     // TODO: Find a better icon for "Jazz Styles"
                 }
         }
+        .environment(artists)
     }
 }
 
