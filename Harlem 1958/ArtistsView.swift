@@ -12,7 +12,6 @@ struct ArtistsView: View {
     var artists:[Artist]
     
     //TODO: Check deathDate = nil case in comparison
-    //TODO: Add name + surname option
     
     enum SortOption: String, CaseIterable, Identifiable {
         case name = "Name"
@@ -29,7 +28,7 @@ struct ArtistsView: View {
             case .surname:
                 return { $0.surname < $1.surname }
             case .birth:
-                return { $0.birthDate! < $1.birthDate! }
+                return { $0.birthDate < $1.birthDate }
         }
     }
     
@@ -45,7 +44,11 @@ struct ArtistsView: View {
                 ForEach(sortedArtists) { artist in
                     NavigationLink(value: artist) {
                         HStack{
-                            Text("\(artist.name)  \(artist.surname)")
+                            if selectedSortOption == .surname {
+                                Text(artist.fullSurname)
+                            } else {
+                                Text(artist.fullName)
+                            }
                             Spacer()
                             Text(artist.birthString)
                         }
@@ -53,6 +56,9 @@ struct ArtistsView: View {
                 }
             }
 //            .listStyle(.plain)
+            .navigationDestination(for: Artist.self) { artist in
+                ArtistView(artist: artist)
+            }
             .navigationTitle("Harlem 1958")
             .toolbar{
                 Menu("Sort", systemImage: "arrow.up.arrow.down") {

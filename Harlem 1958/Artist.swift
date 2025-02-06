@@ -26,10 +26,10 @@ struct Artist: Codable, Identifiable, Hashable {
         surname + " " + name
     }
     
-    var birthDate: Date? {
+    var birthDate: Date {
         let birthString = dates.split(separator: "-").map{String($0)}[0]
         let birthStringFormatted = formatDateString(from: birthString)
-        return dateFromString(birthStringFormatted)
+        return dateFromString(birthStringFormatted)!
     }
     
     var deathDate: Date? {
@@ -42,7 +42,7 @@ struct Artist: Codable, Identifiable, Hashable {
     }
     
     var birthString: String {
-        return birthDate?.formatted(date: .abbreviated, time: .omitted) ?? "N/A"
+        return birthDate.formatted(date: .abbreviated, time: .omitted)
     }
     
     var deathString: String {
