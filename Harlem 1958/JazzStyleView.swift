@@ -12,6 +12,8 @@ struct JazzStyleView: View {
     var list: [Artist]
     var jazzStyle:[String: Int]
     
+    // TODO: Fix jazzStyle list order
+    
     var body: some View {
 
         List {

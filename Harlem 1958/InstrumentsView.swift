@@ -12,6 +12,8 @@ struct InstrumentsView: View {
     var list: [Artist]
     var instruments:[String: Int]
     
+    // TODO: Fix instruments list order
+    
     var body: some View {
         List {
             ForEach(Array(instruments), id: \.key) { key, value in
