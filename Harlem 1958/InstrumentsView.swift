@@ -9,27 +9,31 @@ import SwiftUI
 
 struct InstrumentsView: View {
     
-    @Environment(Artists.self) var artists
+    var list: [Artist]
+    var instruments:[String: Int]
     
     var body: some View {
-        NavigationStack{
-            List {
-                ForEach(Array(artists.instruments), id: \.key) { key, value in
-                    NavigationLink(value: key) {
-                        HStack{
-                            Text("\(key)")
-                            Spacer()
-                            Text("(\(value))")
-                        }
+        List {
+            ForEach(Array(instruments), id: \.key) { key, value in
+                NavigationLink(value: key) {
+                    HStack{
+                        Text(key)
+                        Spacer()
+                        Text("\(value)")
                     }
                 }
             }
-            .navigationTitle("Instruments")
+        }
+        .navigationTitle("Instruments")
+        .navigationDestination(for: String.self) { instrument in
+                ArtistsView(list: list, instrumentFilter: instrument, navTitle: "\(instrument) Players")
         }
     }
 }
 
 #Preview {
-    InstrumentsView()
-        .environment(Artists())
+    let artists = Artists()
+    return NavigationStack{
+        InstrumentsView(list: artists.list, instruments: artists.instruments)
+    }
 }

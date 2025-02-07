@@ -7,37 +7,16 @@
 
 import Foundation
 
-@Observable
-class Artists {
+struct Artists {
     
     var list: [Artist] = Bundle.main.decode("artists.json")
-    var selectedSortOption: SortOption = .name
-    
-    var sortedList: [Artist] {
-        return list.sorted(by: sortKey)
-    }
-    
-    enum SortOption: String, CaseIterable, Identifiable {
-        case name = "Name"
-        case surname = "Surname"
-        case birth = "Birth"
-
-        var id: String { rawValue }
-    }
-    
-    private var sortKey: (Artist, Artist) -> Bool {
-        switch selectedSortOption {
-            case .name:
-                return { $0.name < $1.name }
-            case .surname:
-                return { $0.surname < $1.surname }
-            case .birth:
-                return { $0.birthDate < $1.birthDate }
-        }
-    }
     
     var instruments: [String: Int] {
         getInstruments()
+    }
+    
+    var jazzStyles: [String: Int] {
+        getJazzStyles()
     }
     
     private func getInstruments() -> [String: Int] {
@@ -49,5 +28,16 @@ class Artists {
             }
         }
         return instruments
+    }
+    
+    private func getJazzStyles()  -> [String: Int] {
+        var styles = [String:Int]()
+        
+        for artist in list {
+            for style in artist.jazzStyle {
+                styles[style, default: 0] += 1
+            }
+        }
+        return styles
     }
 }
