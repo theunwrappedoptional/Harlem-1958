@@ -49,3 +49,7 @@ struct ArtistView: View {
     let artists:[Artist] = Bundle.main.decode("artists.json")
     return ArtistView(artist: artists[0])
 }
+
+
+// TODO: Find a smart way to fetch images
+// TODO: Layout ArtistView

@@ -12,23 +12,22 @@ struct JazzStyleView: View {
     var list: [Artist]
     var jazzStyle:[String: Int]
     
-    // TODO: Fix jazzStyle list order
-    
     var body: some View {
 
         List {
-            ForEach(Array(jazzStyle), id: \.key) { key, value in
+            ForEach(Array(jazzStyle.keys).sorted(), id: \.self) { key in
                 NavigationLink(value: key) {
                     HStack{
                         Text(key)
                         Spacer()
-                        Text("\(value)")
+                        Text("\(jazzStyle[key]!)")
                     }
                 }
             }
         }
         .navigationDestination(for: String.self) { style in
-            ArtistsView(list: list, jazzStyleFilter: style, navTitle: "\(style) Players")
+            ArtistsView(list: list.filter{ $0.jazzStyle.contains(style)},
+            navTitle: "\(style) Players")
         }
         .navigationTitle("Jazz Styles")
     }
@@ -40,3 +39,5 @@ struct JazzStyleView: View {
         JazzStyleView(list: artists.list, jazzStyle: artists.jazzStyles)
     }
 }
+
+// TODO: Create GridView (with images)

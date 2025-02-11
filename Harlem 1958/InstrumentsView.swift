@@ -12,23 +12,23 @@ struct InstrumentsView: View {
     var list: [Artist]
     var instruments:[String: Int]
     
-    // TODO: Fix instruments list order
-    
     var body: some View {
         List {
-            ForEach(Array(instruments), id: \.key) { key, value in
+            ForEach(Array(instruments.keys).sorted(), id: \.self) { key in
                 NavigationLink(value: key) {
                     HStack{
                         Text(key)
                         Spacer()
-                        Text("\(value)")
+                        Text("\(instruments[key]!)")
                     }
                 }
             }
         }
         .navigationTitle("Instruments")
         .navigationDestination(for: String.self) { instrument in
-                ArtistsView(list: list, instrumentFilter: instrument, navTitle: "\(instrument) Players")
+            ArtistsView(
+                list: list.filter{$0.instruments.contains(instrument)},
+                navTitle: "\(instrument) Players")
         }
     }
 }
@@ -39,3 +39,5 @@ struct InstrumentsView: View {
         InstrumentsView(list: artists.list, instruments: artists.instruments)
     }
 }
+
+// TODO: Create GridView (with images)

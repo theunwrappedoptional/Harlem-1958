@@ -9,28 +9,21 @@ import SwiftUI
 
 struct ArtistsView: View {
     
-    let list: [Artist]
-   
-    var instrumentFilter: String = ""
-    var jazzStyleFilter: String = ""
+    var list: [Artist]
+    
+    @State private var searchName = ""
+    @State private var selectedSortOption: SortOption = .name
     
     var navTitle = "Harlem 1958"
     
-    var sortedList: [Artist] {
-        if !instrumentFilter.isEmpty {
-            return list.filter { artist in
-                artist.instruments.contains(instrumentFilter)
-            }.sorted(by: sortKey)
-        } else if !jazzStyleFilter.isEmpty {
-            return list.filter { artist in
-                artist.jazzStyle.contains(jazzStyleFilter)
-            }.sorted(by: sortKey)
-        } else {
+    var filteredList: [Artist] {
+        if searchName.isEmpty {
             return list.sorted(by: sortKey)
+        } else {
+            return list.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
+            }.sorted(by: sortKey)
         }
     }
-    
-    @State private var selectedSortOption: SortOption = .name
     
     enum SortOption: String, CaseIterable, Identifiable {
         case name = "Name"
@@ -40,7 +33,7 @@ struct ArtistsView: View {
         var id: String { rawValue }
     }
     
-    private var sortKey: (Artist, Artist) -> Bool {
+    var sortKey: (Artist, Artist) -> Bool {
         switch selectedSortOption {
             case .name:
                 return { $0.name < $1.name }
@@ -53,7 +46,7 @@ struct ArtistsView: View {
     
     var body: some View {
         List {
-            ForEach(sortedList) { artist in
+            ForEach(filteredList) { artist in
                 NavigationLink(value: artist) {
                     HStack{
                         if selectedSortOption == .surname {
@@ -67,11 +60,12 @@ struct ArtistsView: View {
                 }
             }
         }
+        .searchable(text: $searchName, placement: .automatic, prompt: "Search Artist")
         .navigationDestination(for: Artist.self) { artist in
             ArtistView(artist: artist)
         }
         .navigationTitle(navTitle)
-        .navigationBarTitleDisplayMode(instrumentFilter.isEmpty && jazzStyleFilter.isEmpty ? .large : .inline )
+        .navigationBarTitleDisplayMode(.automatic)
         .toolbar{
             Menu("Sort", systemImage: "arrow.up.arrow.down") {
                 Picker("Sort", selection: $selectedSortOption) {
@@ -85,8 +79,8 @@ struct ArtistsView: View {
 }
 
 #Preview {    
-    let artists = Artists()
+    let list = Artists().list
     return NavigationStack{
-        ArtistsView(list: artists.list)
+        ArtistsView(list: list)
     }
 }

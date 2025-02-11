@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationStack{
-                ArtistsView(list: artists.list)
+                ArtistsView(list: artists.list, navTitle: "Harlem 1958")
             }
             .tabItem {
                 Label("Artists", systemImage: "person.3.fill")
@@ -41,3 +41,6 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+// TODO: Check for the .searchable bug in NavigationStack
+// TODO: Apply styles
