@@ -45,22 +45,25 @@ struct ArtistsView: View {
     }
     
     var body: some View {
-        List {
-            ForEach(filteredList) { artist in
-                NavigationLink(value: artist) {
-                    HStack{
-                        if selectedSortOption == .surname {
-                            Text(artist.fullSurname)
-                        } else {
-                            Text(artist.fullName)
+        ZStack {
+            List {
+                ForEach(filteredList) { artist in
+                    NavigationLink(value: artist) {
+                        HStack{
+                            if selectedSortOption == .surname {
+                                Text(artist.fullSurname)
+                            } else {
+                                Text(artist.fullName)
+                            }
+                            Spacer()
+                            Text(artist.birthString)
                         }
-                        Spacer()
-                        Text(artist.birthString)
                     }
+                    .frame(height: 38)
+                    .listRowBackground(Color.maniacMansion)
                 }
             }
         }
-        .searchable(text: $searchName, placement: .automatic, prompt: "Search Artist")
         .navigationDestination(for: Artist.self) { artist in
             ArtistView(artist: artist)
         }
@@ -75,6 +78,9 @@ struct ArtistsView: View {
                 }
             }
         }
+        
+        //FIXME: Glitch (on preview and simulator)
+        .searchable(text: $searchName, placement: .automatic, prompt: "Search Artist")
     }
 }
 
@@ -82,5 +88,6 @@ struct ArtistsView: View {
     let list = Artists().list
     return NavigationStack{
         ArtistsView(list: list)
+            .preferredColorScheme(.dark)
     }
 }

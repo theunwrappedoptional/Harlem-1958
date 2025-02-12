@@ -9,26 +9,49 @@ import SwiftUI
 
 struct InstrumentsView: View {
     
+    let columns = [
+        GridItem(.adaptive(minimum: 150))
+    ]
+    
     var list: [Artist]
     var instruments:[String: Int]
     
+    var filteredList: [String] {
+            return Array(instruments.keys).sorted()
+    }
+    
     var body: some View {
-        List {
-            ForEach(Array(instruments.keys).sorted(), id: \.self) { key in
-                NavigationLink(value: key) {
-                    HStack{
-                        Text(key)
-                        Spacer()
-                        Text("\(instruments[key]!)")
+        NavigationStack{
+            ScrollView{
+                LazyVGrid(columns: columns) {
+                    ForEach(filteredList, id: \.self) { key in
+                        NavigationLink(value: key) {
+                            ZStack{
+                                //FIXME: Add Image
+                                Color.magentaMemoir
+                                    .frame(maxWidth: CGFloat.infinity, minHeight: 150)
+                                
+                                VStack{
+                                    Text(key)
+                                        .font(Font.headline)
+                                        .foregroundStyle(Color.white)
+                                    
+                                    Text("(\(instruments[key]!))")
+                                        .foregroundStyle(Color.white)
+                                }
+                            }
+                            .clipShape(.rect(cornerRadius:10))
+                        }
                     }
                 }
+                .padding([Edge.Set.horizontal, Edge.Set.bottom])
             }
-        }
-        .navigationTitle("Instruments")
-        .navigationDestination(for: String.self) { instrument in
-            ArtistsView(
-                list: list.filter{$0.instruments.contains(instrument)},
-                navTitle: "\(instrument) Players")
+            .navigationTitle("Instruments")
+            .navigationDestination(for: String.self) { instrument in
+                ArtistsView(
+                    list: list.filter{$0.instruments.contains(instrument)},
+                    navTitle: "\(instrument) Players")
+            }
         }
     }
 }
@@ -37,7 +60,6 @@ struct InstrumentsView: View {
     let artists = Artists()
     return NavigationStack{
         InstrumentsView(list: artists.list, instruments: artists.instruments)
+            .preferredColorScheme(.dark)
     }
 }
-
-// TODO: Create GridView (with images)

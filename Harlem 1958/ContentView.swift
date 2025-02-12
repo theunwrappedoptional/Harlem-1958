@@ -19,28 +19,21 @@ struct ContentView: View {
             .tabItem {
                 Label("Artists", systemImage: "person.3.fill")
             }
-            NavigationStack{
-                InstrumentsView(list:artists.list, instruments: artists.instruments)
-            }
+            InstrumentsView(list:artists.list, instruments: artists.instruments)
             .tabItem {
                 Label("Instruments", systemImage: "music.mic")
                 // TODO: Find a better icon for "Instruments"
             }
-            
-            NavigationStack{
-                JazzStyleView(list:artists.list, jazzStyle: artists.jazzStyles)
-            }
+            JazzStyleView(list:artists.list, jazzStyle: artists.jazzStyles)
             .tabItem {
                 Label("Jazz Styles", systemImage: "music.quarternote.3")
                 // TODO: Find a better icon for "Jazz Styles"
             }
         }
+        .preferredColorScheme(.dark)
     }
 }
 
 #Preview {
     ContentView()
 }
-
-// TODO: Check for the .searchable bug in NavigationStack
-// TODO: Apply styles
