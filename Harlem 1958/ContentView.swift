@@ -21,13 +21,11 @@ struct ContentView: View {
             }
             InstrumentsView(list:artists.list, instruments: artists.instruments)
             .tabItem {
-                Label("Instruments", systemImage: "music.mic")
-                // TODO: Find a better icon for "Instruments"
+                Label("Instruments", image: "custom.instrument")
             }
             JazzStyleView(list:artists.list, jazzStyle: artists.jazzStyles)
             .tabItem {
                 Label("Jazz Styles", systemImage: "music.quarternote.3")
-                // TODO: Find a better icon for "Jazz Styles"
             }
         }
         .preferredColorScheme(.dark)
