@@ -9,18 +9,16 @@ import SwiftUI
 
 struct ArtistsView: View {
     
-    var list: [Artist]
+    @Environment(ModelData.self) var modelData: ModelData
     
     @State private var searchName = ""
     @State private var selectedSortOption: SortOption = .name
     
-    var navTitle = "Harlem 1958"
-    
     var filteredList: [Artist] {
         if searchName.isEmpty {
-            return list.sorted(by: sortKey)
+            return modelData.artists.sorted(by: sortKey)
         } else {
-            return list.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
+            return modelData.artists.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
             }.sorted(by: sortKey)
         }
     }
@@ -49,17 +47,8 @@ struct ArtistsView: View {
             List {
                 ForEach(filteredList) { artist in
                     NavigationLink(value: artist) {
-                        HStack{
-                            if selectedSortOption == .surname {
-                                Text(artist.fullSurname)
-                            } else {
-                                Text(artist.fullName)
-                            }
-                            Spacer()
-                            Text(artist.birthString)
-                        }
+                        ArtistRow(artist: artist, isOrderedBySurname: selectedSortOption == .surname ? true : false)
                     }
-                    .frame(height: 38)
                     .listRowBackground(Color.maniacMansion)
                 }
             }
@@ -67,7 +56,7 @@ struct ArtistsView: View {
         .navigationDestination(for: Artist.self) { artist in
             ArtistView(artist: artist)
         }
-        .navigationTitle(navTitle)
+        .navigationTitle("Harlem 1958")
         .navigationBarTitleDisplayMode(.automatic)
         .toolbar{
             Menu("Sort", systemImage: "arrow.up.arrow.down") {
@@ -84,10 +73,10 @@ struct ArtistsView: View {
     }
 }
 
-#Preview {    
-    let list = Artists().list
+#Preview {
     return NavigationStack{
-        ArtistsView(list: list)
+        ArtistsView()
+            .environment(ModelData())
             .preferredColorScheme(.dark)
     }
 }

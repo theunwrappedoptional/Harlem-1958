@@ -9,34 +9,33 @@ import SwiftUI
 
 struct InstrumentsView: View {
     
+    @Environment(ModelData.self) var modelData: ModelData
+    
     let columns = [
         GridItem(.adaptive(minimum: 150))
     ]
     
-    var list: [Artist]
-    var instruments:[String: Int]
-    
     var filteredList: [String] {
-            return Array(instruments.keys).sorted()
+        return Array(modelData.instruments.keys).sorted()
     }
     
     var body: some View {
         NavigationStack{
             ScrollView{
                 LazyVGrid(columns: columns) {
-                    ForEach(filteredList, id: \.self) { key in
-                        NavigationLink(value: key) {
+                    ForEach(filteredList, id: \.self) { instrument in
+                        NavigationLink(value: instrument) {
                             ZStack{
                                 //FIXME: Add Image
                                 Color.magentaMemoir
                                     .frame(maxWidth: CGFloat.infinity, minHeight: 150)
                                 
                                 VStack{
-                                    Text(key)
+                                    Text(instrument)
                                         .font(Font.headline)
                                         .foregroundStyle(Color.white)
                                     
-                                    Text("(\(instruments[key]!))")
+                                    Text("(\(modelData.instruments[instrument]!.count))")
                                         .foregroundStyle(Color.white)
                                 }
                             }
@@ -48,18 +47,16 @@ struct InstrumentsView: View {
             }
             .navigationTitle("Instruments")
             .navigationDestination(for: String.self) { instrument in
-                ArtistsView(
-                    list: list.filter{$0.instruments.contains(instrument)},
-                    navTitle: "\(instrument) Players")
+                Text(instrument)
             }
         }
     }
 }
 
 #Preview {
-    let artists = Artists()
     return NavigationStack{
-        InstrumentsView(list: artists.list, instruments: artists.instruments)
+        InstrumentsView()
+            .environment(ModelData())
             .preferredColorScheme(.dark)
     }
 }

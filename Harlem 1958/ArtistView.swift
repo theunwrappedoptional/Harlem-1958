@@ -14,13 +14,17 @@ struct ArtistView: View {
     var body: some View {
         ScrollView{
             VStack{
-                Image(systemName: "person.circle.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundStyle(.gray)
-                    .opacity(0.5)
-                    .padding([.leading, .trailing,.top], 50)
-                    .padding(.bottom, 30)
+                AsyncImage(url: nil, scale: 1) { image in
+                    image
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                } placeholder: {
+                    Image("placeholder")
+                        .resizable()
+                        .scaledToFit()
+                        .padding([.leading, .trailing,.top], 50)
+                        .padding(.bottom, 30)
+                }                
                 
                 Text("\(artist.birthString)")
                 Text("\(artist.deathString)")
@@ -42,12 +46,14 @@ struct ArtistView: View {
         }
         .navigationTitle(artist.fullName)
         .navigationBarTitleDisplayMode(.inline)
-    }
+            }
 }
 
 #Preview {
     let artists:[Artist] = Bundle.main.decode("artists.json")
     return ArtistView(artist: artists[0])
+            .preferredColorScheme(.dark)
+
 }
 
 

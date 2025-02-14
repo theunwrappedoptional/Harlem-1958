@@ -9,34 +9,33 @@ import SwiftUI
 
 struct JazzStyleView: View {
     
+    @Environment(ModelData.self) var modelData: ModelData
+    
     let columns = [
         GridItem(.adaptive(minimum: 150))
     ]
-    
-    var list: [Artist]
-    var jazzStyle:[String: Int]
-    
+
     var filteredList: [String] {
-            return Array(jazzStyle.keys).sorted()
+        return Array(modelData.jazzStyles.keys).sorted()
     }
     
     var body: some View {
         NavigationStack{
             ScrollView{
                 LazyVGrid(columns: columns) {
-                    ForEach(filteredList, id: \.self) { key in
-                        NavigationLink(value: key) {
+                    ForEach(filteredList, id: \.self) { style in
+                        NavigationLink(value: style) {
                             ZStack{
                                 //FIXME: Add image
                                 Color.magentaMemoir
                                     .frame(maxWidth: CGFloat.infinity, minHeight: 150)
                                 
                                 VStack{
-                                    Text(key)
+                                    Text(style)
                                         .font(Font.headline)
                                         .foregroundStyle(Color.white)
                                     
-                                    Text("(\(jazzStyle[key]!))")
+                                    Text("(\(modelData.jazzStyles[style]!.count))")
                                         .foregroundStyle(Color.white)
                                 }
                             }
@@ -47,8 +46,7 @@ struct JazzStyleView: View {
                 .padding([Edge.Set.horizontal, Edge.Set.bottom])
             }
             .navigationDestination(for: String.self) { style in
-                ArtistsView(list: list.filter{ $0.jazzStyle.contains(style)},
-                            navTitle: "\(style) Players")
+                Text(style)
             }
             .navigationTitle("Jazz Styles")
         }
@@ -56,9 +54,9 @@ struct JazzStyleView: View {
 }
 
 #Preview {
-    let artists = Artists()
     return NavigationStack{
-        JazzStyleView(list: artists.list, jazzStyle: artists.jazzStyles)
+        JazzStyleView()
+            .environment(ModelData())
             .preferredColorScheme(.dark)
     }
 }

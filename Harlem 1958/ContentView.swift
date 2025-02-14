@@ -9,21 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var artists = Artists()
+    @Environment(ModelData.self) var modelData: ModelData
     
     var body: some View {
         TabView {
             NavigationStack{
-                ArtistsView(list: artists.list, navTitle: "Harlem 1958")
+                ArtistsView()
             }
             .tabItem {
                 Label("Artists", systemImage: "person.3.fill")
             }
-            InstrumentsView(list:artists.list, instruments: artists.instruments)
+            InstrumentsView()
             .tabItem {
                 Label("Instruments", image: "custom.instrument")
             }
-            JazzStyleView(list:artists.list, jazzStyle: artists.jazzStyles)
+            JazzStyleView()
             .tabItem {
                 Label("Jazz Styles", systemImage: "music.quarternote.3")
             }
@@ -34,4 +34,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(ModelData())
 }
