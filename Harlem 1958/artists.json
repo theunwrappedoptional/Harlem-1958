@@ -3,6 +3,7 @@
         "name": "Red",
         "surname": "Allen",
         "dates": "1/7/08-4/17/67",
+        "pic": "https://drive.google.com/drive-viewer/AKGpihaYOw4mH4c9uxHRfEcDKIfmO8gkJYZSo3DayjuqpVHq028uaP1KW0cdGX8NPxwZxUzhOoLpSZe_knsa-zQuT5JQwwLIzG23km8=w3360-h1704-rw-v1",
         "instruments": [
             "Trumpet"
         ],
@@ -20,6 +21,7 @@
         "name": "Buster",
         "surname": "Bailey",
         "dates": "6/19/02-4/12/67",
+        "pic":"",
         "instruments": [
             "Clarinet"
         ],
@@ -36,6 +38,7 @@
         "name": "Count",
         "surname": "Basie",
         "dates": "8/21/04-4/26/84",
+        "pic":"",
         "instruments": [
             "Piano"
         ],
@@ -54,6 +57,7 @@
         "name": "Emmett",
         "surname": "Berry",
         "dates": "7/23/15-6/22/93",
+        "pic":"",
         "instruments": [
             "Trumpet"
         ],
@@ -71,6 +75,7 @@
         "name": "Art",
         "surname": "Blakey",
         "dates": "10/11/19-10/16/90",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihYiF8Sbbq7xWww3zLw_vh2yhZ2s28Oc_c-2_XeWmiRbHHQXhUfhB0kPKoDcAzHUKm0ZXz5-jcaKE1oFyn2g0DRX9LW5pik2zQo=w3360-h1704",
         "instruments": [
             "Drums"
         ],
@@ -88,6 +93,7 @@
         "name": "Scoville",
         "surname": "Browne",
         "dates": "10/13/09-10/4/94",
+        "pic":"",
         "instruments": [
             "Clarinet"
         ],
@@ -104,6 +110,7 @@
         "name": "Lawence",
         "surname": "Browne",
         "dates": "8/3/07-9/5/88",
+        "pic":"",
         "instruments": [
             "Trombone"
         ],
@@ -121,6 +128,7 @@
         "name": "Buck",
         "surname": "Clayton",
         "dates": "11/12/11-12/8/91",
+        "pic":"",
         "instruments": [
             "Trumpet"
         ],
@@ -139,6 +147,7 @@
         "name": "Bill",
         "surname": "Crump",
         "dates": "11/2/07-10/26/79",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -153,6 +162,7 @@
         "name": "Vic",
         "surname": "Dickenson",
         "dates": "8/6/06-11/16/84",
+        "pic":"",
         "instruments": [
             "Trombone"
         ],
@@ -170,6 +180,7 @@
         "name": "Roy",
         "surname": "Eldridge",
         "dates": "1/30/11-2/26/89",
+        "pic":"",
         "instruments": [
             "Trumpet"
         ],
@@ -187,6 +198,7 @@
         "name": "Art",
         "surname": "Farmer",
         "dates": "9/21/28-10/4/99",
+        "pic":"",
         "instruments": [
             "Trumpet"
         ],
@@ -203,6 +215,7 @@
         "name": "Bud",
         "surname": "Freeman",
         "dates": "4/13/06-3/15/91",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -219,6 +232,7 @@
         "name": "Dizzy",
         "surname": "Gillespie",
         "dates": "10/21/17-1/6/93",
+        "pic":"",
         "instruments": [
             "Trumpet"
         ],
@@ -239,6 +253,7 @@
         "name": "Tyree",
         "surname": "Glenn",
         "dates": "11/23/12-5/18/74",
+        "pic":"",
         "instruments": [
             "Trombone"
         ],
@@ -255,6 +270,7 @@
         "name": "Benny",
         "surname": "Golson",
         "dates": "1/25/29-9/21/24",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -272,6 +288,7 @@
         "name": "Sonny",
         "surname": "Greer",
         "dates": "12/13/1895-3/23/82",
+        "pic":"",
         "instruments": [
             "Drums"
         ],
@@ -289,6 +306,7 @@
         "name": "Johnny",
         "surname": "Griffin",
         "dates": "4/24/28-7/25/08",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -307,6 +325,7 @@
         "name": "Gigi",
         "surname": "Gryce",
         "dates": "11/28/27-3/17/83",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -325,6 +344,7 @@
         "name": "Colman",
         "surname": "Hawkins",
         "dates": "11/21/04-5/19/69",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -344,6 +364,7 @@
         "name": "J.C.",
         "surname": "Heard",
         "dates": "10/8/17-9/27/88",
+        "pic":"",
         "instruments": [
             "Drums"
         ],
@@ -362,6 +383,7 @@
         "name": "Jay C.",
         "surname": "Higginbotham",
         "dates": "5/11/06-5/26/73",
+        "pic":"",
         "instruments": [
             "Trombone"
         ],
@@ -379,6 +401,7 @@
         "name": "Milt",
         "surname": "Hinton",
         "dates": "6/23/10-12/19/00",
+        "pic":"",
         "instruments": [
             "Bass"
         ],
@@ -397,6 +420,7 @@
         "name": "Chubby",
         "surname": "Jackson",
         "dates": "10/25/18-10/1/03",
+        "pic":"",
         "instruments": [
             "Bass"
         ],
@@ -413,6 +437,7 @@
         "name": "Hilton",
         "surname": "Jefferson",
         "dates": "7/30/03-11/14/68",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -430,6 +455,7 @@
         "name": "Osie",
         "surname": "Johnson",
         "dates": "1/11/23-2/10/66",
+        "pic":"",
         "instruments": [
             "Drums"
         ],
@@ -446,6 +472,7 @@
         "name": "Hank",
         "surname": "Jones",
         "dates": "7/13/18-5/16/10",
+        "pic":"",
         "instruments": [
             "Piano"
         ],
@@ -464,6 +491,7 @@
         "name": "Jimmy",
         "surname": "Jones",
         "dates": "12/30/18-4/29/82",
+        "pic":"",
         "instruments": [
             "Piano"
         ],
@@ -481,6 +509,7 @@
         "name": "Jo",
         "surname": "Jones",
         "dates": "10/7/11-9/3/85",
+        "pic":"",
         "instruments": [
             "Drums"
         ],
@@ -498,6 +527,7 @@
         "name": "Taft",
         "surname": "Jordan",
         "dates": "2/15/18-11/1/81",
+        "pic":"",
         "instruments": [
             "Trumpet"
         ],
@@ -514,6 +544,7 @@
         "name": "Max",
         "surname": "Kaminsky",
         "dates": "9/7/09-9/6/94",
+        "pic":"",
         "instruments": [
             "Trumpet"
         ],
@@ -529,6 +560,7 @@
         "name": "Gene",
         "surname": "Krupa",
         "dates": "1/15/09-10/16/73",
+        "pic":"",
         "instruments": [
             "Drums"
         ],
@@ -546,6 +578,7 @@
         "name": "Eddie",
         "surname": "Locke",
         "dates": "2/8/30-9/7/09",
+        "pic":"",
         "instruments": [
             "Drums"
         ],
@@ -563,6 +596,7 @@
         "name": "Marian",
         "surname": "McPartland",
         "dates": "3/20/20-8/20/13",
+        "pic":"",
         "instruments": [
             "Piano"
         ],
@@ -581,6 +615,7 @@
         "name": "Charles",
         "surname": "Mingus",
         "dates": "4/22/22-1/5/79",
+        "pic":"",
         "instruments": [
             "Bass"
         ],
@@ -599,6 +634,7 @@
         "name": "Miff",
         "surname": "Mole",
         "dates": "3/11/1898-4/29/61",
+        "pic":"",
         "instruments": [
             "Trombone"
         ],
@@ -615,6 +651,7 @@
         "name": "Thelonious",
         "surname": "Monk",
         "dates": "10/10/17-2/17/82",
+        "pic":"",
         "instruments": [
             "Piano"
         ],
@@ -633,6 +670,7 @@
         "name": "Gerry",
         "surname": "Mulligan",
         "dates": "4/6/27-1/20/96",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -650,6 +688,7 @@
         "name": "Oscar",
         "surname": "Pettiford",
         "dates": "9/30/22-9/8/60",
+        "pic":"",
         "instruments": [
             "Bass"
         ],
@@ -667,6 +706,7 @@
         "name": "Rudy",
         "surname": "Powell",
         "dates": "10/28/07-10/30/76",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -685,6 +725,7 @@
         "name": "Lucky",
         "surname": "Roberts",
         "dates": "8/7/1887-2/5/68",
+        "pic":"",
         "instruments": [
             "Piano"
         ],
@@ -701,6 +742,7 @@
         "name": "Sonny",
         "surname": "Rollins",
         "dates": "9/7/30-",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -719,6 +761,7 @@
         "name": "Jimmy",
         "surname": "Rushing",
         "dates": "8/26/03-6/8/72",
+        "pic":"",
         "instruments": [
             "Voice"
         ],
@@ -736,6 +779,7 @@
         "name": "Pee Wee",
         "surname": "Russel",
         "dates": "3/27/06-2/15/69",
+        "pic":"",
         "instruments": [
             "Clarinet"
         ],
@@ -754,6 +798,7 @@
         "name": "Sahib",
         "surname": "Shihab",
         "dates": "6/23/25-10/24/89",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],
@@ -770,6 +815,7 @@
         "name": "Horace",
         "surname": "Silver",
         "dates": "9/2/28-6/18/14",
+        "pic":"",
         "instruments": [
             "Piano"
         ],
@@ -787,6 +833,7 @@
         "name": "Zutty",
         "surname": "Singleton",
         "dates": "5/14/1898-7/14/75",
+        "pic":"",
         "instruments": [
             "Drums"
         ],
@@ -803,6 +850,7 @@
         "name": "Stuff",
         "surname": "Smith",
         "dates": "8/14/09-9/25/67",
+        "pic":"",
         "instruments": [
             "Violin"
         ],
@@ -820,6 +868,7 @@
         "name": "Rex",
         "surname": "Stewart",
         "dates": "2/22/07-9/7/67",
+        "pic":"",
         "instruments": [
             "Trumpet"
         ],
@@ -838,6 +887,7 @@
         "name": "Maxine",
         "surname": "Sullivan",
         "dates": "5/13/11-4/7/87",
+        "pic":"",
         "instruments": [
             "Voice"
         ],
@@ -854,6 +904,7 @@
         "name": "Joe",
         "surname": "Thomas",
         "dates": "05/31/1933-07/26/2017",
+        "pic":"",
         "instruments": [
             "Trumpet"
         ],
@@ -871,6 +922,7 @@
         "name": "Wilbur",
         "surname": "Ware",
         "dates": "9/8/23-9/9/79",
+        "pic":"",
         "instruments": [
             "Bass"
         ],
@@ -887,6 +939,7 @@
         "name": "Dicky",
         "surname": "Wells",
         "dates": "6/10/07-11/12/85",
+        "pic":"",
         "instruments": [
             "Bass"
         ],
@@ -904,6 +957,7 @@
         "name": "George",
         "surname": "Wettling",
         "dates": "11/28/07-6/6/68",
+        "pic":"",
         "instruments": [
             "Drums"
         ],
@@ -920,6 +974,7 @@
         "name": "Ernie",
         "surname": "Wilkins",
         "dates": "7/20/22-6/5/99",
+        "pic":"",
         "instruments": [
             "Drums"
         ],
@@ -936,6 +991,7 @@
         "name": "Mary Lou",
         "surname": "Williams",
         "dates": "5/8/10-5/28/81",
+        "pic":"",
         "instruments": [
             "Piano"
         ],
@@ -953,6 +1009,7 @@
         "name": "Lester",
         "surname": "Young",
         "dates": "9/27/09-3/15/59",
+        "pic":"",
         "instruments": [
             "Saxophone"
         ],

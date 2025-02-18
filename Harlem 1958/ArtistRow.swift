@@ -21,10 +21,11 @@ struct ArtistRow: View {
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
             } placeholder: {
-                Image("placeholder")
+                Image(systemName: "person.crop.circle.fill")
                     .resizable()
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
+                    .foregroundStyle(.magentaMemoir)
             }
 
             VStack(alignment: .leading) {

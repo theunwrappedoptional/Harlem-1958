@@ -12,41 +12,27 @@ struct ArtistView: View {
     let artist: Artist
     
     var body: some View {
-        ScrollView{
-            VStack{
-                AsyncImage(url: nil, scale: 1) { image in
-                    image
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                } placeholder: {
-                    Image("placeholder")
-                        .resizable()
-                        .scaledToFit()
-                        .padding([.leading, .trailing,.top], 50)
-                        .padding(.bottom, 30)
-                }                
+        GeometryReader{ geometry in
+            ScrollView{
+                VStack{
+                    ArtistImageView(artist: artist)
+                        .frame(width: geometry.size.width, height: 600)
+                    
+                    
+                    Text(artist.about)
+                        .multilineTextAlignment(.leading)
+                        .padding(10)
+                    
+                    Text("\(artist.albumPicks.joined(separator: "\n")) ")
+                        .multilineTextAlignment(.center)
+                }
                 
-                Text("\(artist.birthString)")
-                Text("\(artist.deathString)")
-                    .padding(2)
-                
-                Text("\(artist.instruments.joined(separator: ",")) ")
-                    .padding()
-                
-                Text("\(artist.jazzStyle.joined(separator: "\n")) ")
-                    .multilineTextAlignment(.center)
-                
-                Text(artist.about)
-                    .padding()
-                
-                Text("\(artist.albumPicks.joined(separator: "\n")) ")
-                    .multilineTextAlignment(.center)
             }
-            
         }
+        .ignoresSafeArea(edges: .top)
         .navigationTitle(artist.fullName)
         .navigationBarTitleDisplayMode(.inline)
-            }
+    }
 }
 
 #Preview {

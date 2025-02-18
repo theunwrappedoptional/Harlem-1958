@@ -12,6 +12,7 @@ struct Artist: Codable, Identifiable, Hashable {
     var id: String { name + surname }
     let name: String
     let surname: String
+    let pic: String
     let dates: String
     let instruments: [String]
     let about: String
