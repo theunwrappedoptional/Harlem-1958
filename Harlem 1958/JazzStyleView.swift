@@ -46,7 +46,7 @@ struct JazzStyleView: View {
                 .padding([Edge.Set.horizontal, Edge.Set.bottom])
             }
             .navigationDestination(for: String.self) { style in
-                Text(style)
+                ArtistsView(filter: style)
             }
             .navigationTitle("Jazz Styles")
         }

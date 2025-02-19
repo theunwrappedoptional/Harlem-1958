@@ -14,19 +14,24 @@ struct ArtistView: View {
     var body: some View {
         GeometryReader{ geometry in
             ScrollView{
-                VStack{
+                VStack(alignment: .leading){
                     ArtistImageView(artist: artist)
                         .frame(width: geometry.size.width, height: 600)
                     
+                    Group {
+                        Text("About")
+                            .font(.headline)
+                            .fontWeight(.bold)
+                        .padding(.vertical, 20)
+                        Text(artist.about)
+                            .padding(.bottom, 20)
+                            
+                        AlbumPicksView(albums: artist.albumPicks)
+                    }
+                    .padding(.horizontal, 10)
                     
-                    Text(artist.about)
-                        .multilineTextAlignment(.leading)
-                        .padding(10)
-                    
-                    Text("\(artist.albumPicks.joined(separator: "\n")) ")
-                        .multilineTextAlignment(.center)
+                        
                 }
-                
             }
         }
         .ignoresSafeArea(edges: .top)
@@ -39,9 +44,4 @@ struct ArtistView: View {
     let artists:[Artist] = Bundle.main.decode("artists.json")
     return ArtistView(artist: artists[0])
             .preferredColorScheme(.dark)
-
 }
-
-
-// TODO: Find a smart way to fetch images
-// TODO: Layout ArtistView

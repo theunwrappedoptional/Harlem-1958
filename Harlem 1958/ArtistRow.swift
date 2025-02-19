@@ -36,12 +36,10 @@ struct ArtistRow: View {
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
-            
             Spacer()
         }
         .padding(.vertical, 4)
     }
-
 }
 
 #Preview {

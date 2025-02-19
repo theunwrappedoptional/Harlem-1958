@@ -12,6 +12,10 @@ class ModelData {
     
     var artists: [Artist] = Bundle.main.decode("artists.json")
     
+    var allFiltered: [String: [Artist]] {
+        instruments.merging(jazzStyles) { $1 }
+    }
+    
     var instruments: [String: [Artist]] {
         var instruments = [String:[Artist]]()
         

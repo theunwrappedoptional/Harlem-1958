@@ -14,13 +14,25 @@ struct ArtistsView: View {
     @State private var searchName = ""
     @State private var selectedSortOption: SortOption = .name
     
+    var filter = ""
+    
     var filteredList: [Artist] {
-        if searchName.isEmpty {
-            return modelData.artists.sorted(by: sortKey)
+        if filter.isEmpty {
+            if searchName.isEmpty{
+                return modelData.artists.sorted(by: sortKey)
+            } else {
+                return modelData.artists.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
+                }.sorted(by: sortKey)
+            }
         } else {
-            return modelData.artists.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
-            }.sorted(by: sortKey)
+            if searchName.isEmpty{
+                return modelData.allFiltered[filter]!.sorted(by: sortKey)
+            } else {
+                return modelData.allFiltered[filter]!.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
+                }.sorted(by: sortKey)
+            }
         }
+        
     }
     
     enum SortOption: String, CaseIterable, Identifiable {
@@ -67,7 +79,6 @@ struct ArtistsView: View {
                 }
             }
         }
-        
         //FIXME: Glitch (on preview and simulator)
         .searchable(text: $searchName, placement: .automatic, prompt: "Search Artist")
     }

@@ -32,7 +32,7 @@ struct ArtistImageView: View {
                 Text("\(artist.birthString) - \(artist.deathString)")
                     .padding(8)
                     .background(Color.twilight.opacity(0.8))
-                    .clipShape(Capsule())
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
                 
                 HStack{
                     Text("\(Image("custom.instrument")) \(artist.instruments.joined(separator: ",")) ")
@@ -42,7 +42,7 @@ struct ArtistImageView: View {
                 }
                 .padding(8)
                 .background(Color.magentaMemoir.opacity(0.8))
-                .clipShape(Capsule())
+                .clipShape(RoundedRectangle(cornerRadius: 8))
             }
             .padding()
         }

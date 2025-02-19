@@ -26,20 +26,30 @@ struct InstrumentsView: View {
                     ForEach(filteredList, id: \.self) { instrument in
                         NavigationLink(value: instrument) {
                             ZStack{
-                                //FIXME: Add Image
-                                Color.magentaMemoir
-                                    .frame(maxWidth: CGFloat.infinity, minHeight: 150)
+                                AsyncImage(url: URL(string: modelData.instruments[instrument]![0].pic)) { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFill()
+                                        .overlay(Color.maniacMansion.opacity(0.7))
+                                } placeholder: {
+                                    Color.maniacMansion
+                                        .frame(maxWidth: CGFloat.infinity, minHeight: 120)
+                                }
                                 
                                 VStack{
                                     Text(instrument)
+                                        .textCase(.uppercase)
                                         .font(Font.headline)
-                                        .foregroundStyle(Color.white)
+                                        .fontWeight(.bold)
                                     
                                     Text("(\(modelData.instruments[instrument]!.count))")
+                                        .font(Font.caption)
                                         .foregroundStyle(Color.white)
                                 }
+                                .padding(8)
                             }
-                            .clipShape(.rect(cornerRadius:10))
+                            .frame(height: 150)
+                            .clipShape(.rect(cornerRadius:8))
                         }
                     }
                 }
@@ -47,7 +57,7 @@ struct InstrumentsView: View {
             }
             .navigationTitle("Instruments")
             .navigationDestination(for: String.self) { instrument in
-                Text(instrument)
+                ArtistsView(filter: instrument)
             }
         }
     }
