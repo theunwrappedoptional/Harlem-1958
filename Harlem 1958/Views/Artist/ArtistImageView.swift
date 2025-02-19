@@ -19,7 +19,6 @@ struct ArtistImageView: View {
                 image
                     .resizable()
                     .scaledToFill()
-                
             } placeholder: {
                 Image("placeholder")
                     .resizable()
@@ -27,7 +26,7 @@ struct ArtistImageView: View {
             }
             .overlay(Color.black.opacity(0.3))
             
-            VStack {
+            VStack(alignment: .center){
                 Spacer()
                 Text("\(artist.birthString) - \(artist.deathString)")
                     .padding(8)
@@ -36,14 +35,13 @@ struct ArtistImageView: View {
                 
                 HStack{
                     Text("\(Image("custom.instrument")) \(artist.instruments.joined(separator: ",")) ")
-                    
                     Text("\(Image(systemName: "music.quarternote.3")) \(artist.jazzStyle.joined(separator: ", ")) ")
-                        .multilineTextAlignment(.center)
                 }
                 .padding(8)
                 .background(Color.magentaMemoir.opacity(0.8))
                 .clipShape(RoundedRectangle(cornerRadius: 8))
             }
+            .font(.caption)
             .padding()
         }
     }

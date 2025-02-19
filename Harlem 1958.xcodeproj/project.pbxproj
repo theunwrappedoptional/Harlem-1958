@@ -96,8 +96,8 @@
 		54671CEF2D65FA3300C1EBAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				54671CF12D65FA8300C1EBAC /* Artist */,
 				540501672D4CCD52003222BF /* ContentView.swift */,
+				54671CF12D65FA8300C1EBAC /* Artist */,
 				5405017B2D4CE1D9003222BF /* ArtistsView.swift */,
 				54F0DED82D552DEC000C2385 /* InstrumentsView.swift */,
 				549364182D561D7C0079051F /* JazzStyleView.swift */,
