@@ -76,18 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				540501652D4CCD52003222BF /* Harlem_1958App.swift */,
-				540501672D4CCD52003222BF /* ContentView.swift */,
-				5405017B2D4CE1D9003222BF /* ArtistsView.swift */,
-				54F0DED82D552DEC000C2385 /* InstrumentsView.swift */,
-				549364182D561D7C0079051F /* JazzStyleView.swift */,
-				54515D452D54D06D0072AF22 /* ArtistView.swift */,
-				54D47A712D64A16F00D745D2 /* ArtistImageView.swift */,
-				544D64B02D5F544C00A24B65 /* ArtistRow.swift */,
-				540501792D4CD3D0003222BF /* Artist.swift */,
-				54671CEC2D65E81E00C1EBAC /* AlbumPicksView.swift */,
-				5462F90C2D5CBB3F004F29D7 /* Color-Theme.swift */,
-				540501732D4CD2D1003222BF /* Bundle-Decodable.swift */,
-				54F0DED62D5516C4000C2385 /* ModelData.swift */,
+				54671CF02D65FA3A00C1EBAC /* Model */,
+				54671CEF2D65FA3300C1EBAC /* Views */,
 				540501752D4CD316003222BF /* artists.json */,
 				540501692D4CCD55003222BF /* Assets.xcassets */,
 				5405016B2D4CCD55003222BF /* Preview Content */,
@@ -101,6 +91,40 @@
 				5405016C2D4CCD55003222BF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54671CEF2D65FA3300C1EBAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54671CF12D65FA8300C1EBAC /* Artist */,
+				540501672D4CCD52003222BF /* ContentView.swift */,
+				5405017B2D4CE1D9003222BF /* ArtistsView.swift */,
+				54F0DED82D552DEC000C2385 /* InstrumentsView.swift */,
+				549364182D561D7C0079051F /* JazzStyleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54671CF02D65FA3A00C1EBAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				540501792D4CD3D0003222BF /* Artist.swift */,
+				5462F90C2D5CBB3F004F29D7 /* Color-Theme.swift */,
+				540501732D4CD2D1003222BF /* Bundle-Decodable.swift */,
+				54F0DED62D5516C4000C2385 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54671CF12D65FA8300C1EBAC /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				54515D452D54D06D0072AF22 /* ArtistView.swift */,
+				54D47A712D64A16F00D745D2 /* ArtistImageView.swift */,
+				54671CEC2D65E81E00C1EBAC /* AlbumPicksView.swift */,
+				544D64B02D5F544C00A24B65 /* ArtistRow.swift */,
+			);
+			path = Artist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
