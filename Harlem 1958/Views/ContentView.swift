@@ -14,12 +14,12 @@ struct ContentView: View {
     var body: some View {
         TabView {
             NavigationStack{
-                ArtistsView()
+                ArtistListView()
             }
             .tabItem {
                 Label("Artists", systemImage: "person.3.fill")
             }
-            InstrumentsView()
+            InstrumentListView()
             .tabItem {
                 Label("Instruments", image: "custom.instrument")
             }
@@ -27,6 +27,7 @@ struct ContentView: View {
             .tabItem {
                 Label("Jazz Styles", systemImage: "music.quarternote.3")
             }
+                
         }
         .preferredColorScheme(.dark)
     }

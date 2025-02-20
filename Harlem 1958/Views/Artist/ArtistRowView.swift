@@ -1,5 +1,5 @@
 //
-//  ArtistRow.swift
+//  ArtistRowView.swift
 //  Harlem 1958
 //
 //  Created by Manhattan on 14/02/25.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ArtistRow: View {
+struct ArtistRowView: View {
     
     let artist: Artist
     var isOrderedBySurname = false
@@ -18,15 +18,14 @@ struct ArtistRow: View {
             AsyncImage(url: nil, scale: 1) { image in
                 image
                     .resizable()
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
             } placeholder: {
-                Image(systemName: "person.crop.circle.fill")
+                Image(systemName: "person.crop.circle")
                     .resizable()
-                    .frame(width: 50, height: 50)
-                    .clipShape(Circle())
                     .foregroundStyle(.magentaMemoir)
             }
+            .clipShape(Circle())
+            .frame(width: 40, height: 40)
+            .padding(.trailing, 5)
 
             VStack(alignment: .leading) {
                 Text(isOrderedBySurname ? artist.fullSurname : artist.fullName)
@@ -36,7 +35,6 @@ struct ArtistRow: View {
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
-            Spacer()
         }
         .padding(.vertical, 4)
     }
@@ -44,6 +42,6 @@ struct ArtistRow: View {
 
 #Preview {
     let artists:[Artist] = Bundle.main.decode("artists.json")
-    return ArtistRow(artist: artists[0])
+    return ArtistRowView(artist: artists[0])
             .preferredColorScheme(.dark)
 }

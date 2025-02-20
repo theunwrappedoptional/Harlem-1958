@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ArtistsView: View {
+struct ArtistListView: View {
     
     @Environment(ModelData.self) var modelData: ModelData
     
@@ -32,7 +32,6 @@ struct ArtistsView: View {
                 }.sorted(by: sortKey)
             }
         }
-        
     }
     
     enum SortOption: String, CaseIterable, Identifiable {
@@ -55,20 +54,18 @@ struct ArtistsView: View {
     }
     
     var body: some View {
-        ZStack {
-            List {
-                ForEach(filteredList) { artist in
-                    NavigationLink(value: artist) {
-                        ArtistRow(artist: artist, isOrderedBySurname: selectedSortOption == .surname ? true : false)
-                    }
-                    .listRowBackground(Color.maniacMansion)
+        List {
+            ForEach(filteredList) { artist in
+                NavigationLink(value: artist) {
+                    ArtistRowView(artist: artist, isOrderedBySurname: selectedSortOption == .surname ? true : false)
                 }
+                .listRowBackground(Color.maniacMansion)
             }
         }
         .navigationDestination(for: Artist.self) { artist in
             ArtistView(artist: artist)
         }
-        .navigationTitle("Harlem 1958")
+        .navigationTitle(filter.isEmpty ? "Harlem 1958" : filter)
         .navigationBarTitleDisplayMode(.automatic)
         .toolbar{
             Menu("Sort", systemImage: "arrow.up.arrow.down") {
@@ -86,7 +83,7 @@ struct ArtistsView: View {
 
 #Preview {
     return NavigationStack{
-        ArtistsView()
+        ArtistListView()
             .environment(ModelData())
             .preferredColorScheme(.dark)
     }

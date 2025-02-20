@@ -45,8 +45,9 @@ struct JazzStyleView: View {
                 }
                 .padding([Edge.Set.horizontal, Edge.Set.bottom])
             }
+        
             .navigationDestination(for: String.self) { style in
-                ArtistsView(filter: style)
+                ArtistListView(filter: style)
             }
             .navigationTitle("Jazz Styles")
         }
@@ -54,9 +55,7 @@ struct JazzStyleView: View {
 }
 
 #Preview {
-    return NavigationStack{
-        JazzStyleView()
+    return JazzStyleView()
             .environment(ModelData())
             .preferredColorScheme(.dark)
-    }
 }
