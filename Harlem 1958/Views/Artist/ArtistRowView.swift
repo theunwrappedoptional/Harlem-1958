@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ArtistRowView: View {
-    
+    @Environment(ModelData.self) var modelData: ModelData
+
     let artist: Artist
     var isOrderedBySurname = false
+    var imageURL: URL? {
+        URL(string:modelData.imageFor(artist.instruments[0], color: .magentaMemoir))
+    }
     
     var body: some View {
         HStack {
             // TODO: Add URL for image
-            AsyncImage(url: nil, scale: 1) { image in
+            AsyncImage(url: imageURL, scale: 1) { image in
                 image
                     .resizable()
             } placeholder: {
@@ -43,5 +47,6 @@ struct ArtistRowView: View {
 #Preview {
     let artists:[Artist] = Bundle.main.decode("artists.json")
     return ArtistRowView(artist: artists[0])
+            .environment(ModelData())
             .preferredColorScheme(.dark)
 }

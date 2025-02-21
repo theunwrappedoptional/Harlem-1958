@@ -21,6 +21,7 @@
 		5466BEFA2D674294001547DB /* InstrumentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5466BEF92D674294001547DB /* InstrumentRowView.swift */; };
 		54671CED2D65E81E00C1EBAC /* AlbumPicksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54671CEC2D65E81E00C1EBAC /* AlbumPicksView.swift */; };
 		549364192D561D7C0079051F /* JazzStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549364182D561D7C0079051F /* JazzStyleView.swift */; };
+		54BBEBEF2D689C3900F2D2EE /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BBEBEE2D689C3900F2D2EE /* Color+Extension.swift */; };
 		54D47A722D64A16F00D745D2 /* ArtistImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D47A712D64A16F00D745D2 /* ArtistImageView.swift */; };
 		54F0DED72D5516C4000C2385 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0DED62D5516C4000C2385 /* ModelData.swift */; };
 		54F0DED92D552DEC000C2385 /* InstrumentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0DED82D552DEC000C2385 /* InstrumentListView.swift */; };
@@ -42,6 +43,7 @@
 		5466BEF92D674294001547DB /* InstrumentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentRowView.swift; sourceTree = "<group>"; };
 		54671CEC2D65E81E00C1EBAC /* AlbumPicksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPicksView.swift; sourceTree = "<group>"; };
 		549364182D561D7C0079051F /* JazzStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JazzStyleView.swift; sourceTree = "<group>"; };
+		54BBEBEE2D689C3900F2D2EE /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		54D47A712D64A16F00D745D2 /* ArtistImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistImageView.swift; sourceTree = "<group>"; };
 		54F0DED62D5516C4000C2385 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		54F0DED82D552DEC000C2385 /* InstrumentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentListView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				540501652D4CCD52003222BF /* Harlem_1958App.swift */,
 				54671CF02D65FA3A00C1EBAC /* Model */,
 				54671CEF2D65FA3300C1EBAC /* Views */,
+				54BBEBEE2D689C3900F2D2EE /* Color+Extension.swift */,
 				540501752D4CD316003222BF /* artists.json */,
 				540501692D4CCD55003222BF /* Assets.xcassets */,
 				5405016B2D4CCD55003222BF /* Preview Content */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				540501682D4CCD52003222BF /* ContentView.swift in Sources */,
+				54BBEBEF2D689C3900F2D2EE /* Color+Extension.swift in Sources */,
 				54D47A722D64A16F00D745D2 /* ArtistImageView.swift in Sources */,
 				540501662D4CCD52003222BF /* Harlem_1958App.swift in Sources */,
 				549364192D561D7C0079051F /* JazzStyleView.swift in Sources */,

@@ -25,12 +25,12 @@ struct ArtistView: View {
                         .padding(.vertical, 20)
                         Text(artist.about)
                             .padding(.bottom, 20)
-                            
-                        AlbumPicksView(albums: artist.albumPicks)
+                          
+                        if !artist.albumPicks.isEmpty {
+                            AlbumPicksView(albums: artist.albumPicks)
+                        }
                     }
                     .padding(.horizontal, 10)
-                    
-                        
                 }
             }
         }

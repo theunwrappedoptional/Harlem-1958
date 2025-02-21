@@ -27,7 +27,6 @@ struct ContentView: View {
             .tabItem {
                 Label("Jazz Styles", systemImage: "music.quarternote.3")
             }
-                
         }
         .preferredColorScheme(.dark)
     }

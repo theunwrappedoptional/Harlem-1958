@@ -13,36 +13,9 @@ struct InstrumentRowView: View {
     
     var instrument: String
     
-    let urlBase = "https://img.icons8.com/ios-filled/100/"
-    let iconColorHexCode = "ff6361"
-    
-    func imageFor(_ instrument: String) -> String  {
-        let urlString = urlBase+iconColorHexCode
-        switch instrument {
-            case "Bass":
-                return urlString + "/bass-clef.png"
-            case "Clarinet":
-                return urlString + "/clarinet.png"
-            case "Drums":
-                return urlString + "/drum-set.png"
-            case "Piano":
-                return urlString + "/grand-piano.png"
-            case "Saxophone":
-                return urlString + "/saxophone.png"
-            case "Trombone":
-                return urlString + "/trombone.png"
-            case "Trumpet":
-                return urlString + "/trumpet.png"
-            case "Violin":
-                return urlString + "/violin.png"
-            default:
-                return urlString + "/micro.png"
-        }
-    }
-    
     var body: some View {
         HStack{
-            AsyncImage(url: URL(string: imageFor(instrument))) { image in
+            AsyncImage(url: URL(string: modelData.imageFor(instrument, color: .fusionRed))) { image in
                 image
                     .resizable()
             } placeholder: {

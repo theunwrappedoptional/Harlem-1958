@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 @Observable
 class ModelData {
@@ -36,5 +37,30 @@ class ModelData {
             }
         }
         return styles
+    }
+    
+    func imageFor(_ instrument: String, color: Color) -> String  {
+        let urlBase = "https://img.icons8.com/ios-filled/100/"
+        let urlString = urlBase + color.toHex()!
+        switch instrument {
+            case "Bass":
+                return urlString + "/bass-clef.png"
+            case "Clarinet":
+                return urlString + "/clarinet.png"
+            case "Drums":
+                return urlString + "/drum-set.png"
+            case "Piano":
+                return urlString + "/grand-piano.png"
+            case "Saxophone":
+                return urlString + "/saxophone.png"
+            case "Trombone":
+                return urlString + "/trombone.png"
+            case "Trumpet":
+                return urlString + "/trumpet.png"
+            case "Violin":
+                return urlString + "/violin.png"
+            default:
+                return urlString + "/micro.png"
+        }
     }
 }
