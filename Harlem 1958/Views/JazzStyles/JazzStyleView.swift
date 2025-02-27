@@ -37,6 +37,7 @@ struct JazzStyleView: View {
                                     
                                     Text("(\(modelData.jazzStyles[style]!.count))")
                                         .foregroundStyle(Color.white)
+                                        .font(.footnote)
                                 }
                             }
                             .clipShape(.rect(cornerRadius:10))

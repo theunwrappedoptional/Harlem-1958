@@ -19,10 +19,12 @@ struct ContentView: View {
             .tabItem {
                 Label("Artists", systemImage: "person.3.fill")
             }
+            
             InstrumentListView()
             .tabItem {
                 Label("Instruments", image: "custom.instrument")
             }
+            
             JazzStyleView()
             .tabItem {
                 Label("Jazz Styles", systemImage: "music.quarternote.3")

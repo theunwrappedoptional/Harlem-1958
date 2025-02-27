@@ -14,6 +14,10 @@ struct ArtistListView: View {
     @State private var searchName = ""
     @State private var selectedSortOption: SortOption = .name
     
+//  Hacks to manage search field visibility avoiding glitches
+//  @State private var toolbarVisibility : Visibility = .hidden
+    @State private var isSearchActive = false
+    
     var filter = ""
     
     var filteredList: [Artist] {
@@ -66,18 +70,53 @@ struct ArtistListView: View {
             ArtistView(artist: artist)
         }
         .navigationTitle(filter.isEmpty ? "Harlem 1958" : filter)
-        .navigationBarTitleDisplayMode(.automatic)
         .toolbar{
-            Menu("Sort", systemImage: "arrow.up.arrow.down") {
-                Picker("Sort", selection: $selectedSortOption) {
-                    ForEach(SortOption.allCases) { option in
-                        Text(option.rawValue).tag(option)
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    withAnimation() {
+                        // FIXME: Try to improve animation
+                        isSearchActive.toggle()
+                    }
+                }) {
+                    Image(systemName: isSearchActive ? "magnifyingglass.circle.fill" : "magnifyingglass.circle")
+                }
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Menu("Sort", systemImage: "arrow.up.arrow.down") {
+                    Picker("Sort", selection: $selectedSortOption) {
+                        ForEach(SortOption.allCases) { option in
+                            Text(option.rawValue).tag(option)
+                        }
                     }
                 }
             }
         }
-        //FIXME: Glitch (on preview and simulator)
-        .searchable(text: $searchName, placement: .automatic, prompt: "Search Artist")
+        .if(isSearchActive) { view in
+            view
+            .searchable(text: $searchName)
+        }
+//        .searchable(text: $searchName)
+        
+//       Hack 1 to avoid glich on search field during navigation transitions (check view "if"   extension) - The search fild still has a quite random behaviour
+//
+//        .if(isViewReady) { view in
+//            view
+//            .searchable(text: $searchName)
+//        }
+//        .task {
+            // Delay applying the searchable modifier until after transition
+//            try? await Task.sleep(nanoseconds: 100_000_000) // 0.1 seconds
+//            isViewReady = true
+//        }
+        
+        
+//      Hack 2 to avoid glich on search field during navigation transitions
+//      This solution compromises the animation flow during the transition
+//        .onAppear {toolbarVisibility = .automatic}
+//        .toolbar(toolbarVisibility, for: .navigationBar)
+//        .searchable(text: $searchName)
+        
     }
 }
 
