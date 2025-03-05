@@ -147,7 +147,7 @@
         "name": "Bill",
         "surname": "Crump",
         "dates": "11/2/07-10/26/79",
-        "pic":"",
+        "pic":"_",
         "instruments": [
             "Saxophone"
         ],
@@ -325,7 +325,7 @@
         "name": "Gigi",
         "surname": "Gryce",
         "dates": "11/28/27-3/17/83",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihatsiNMtfqmcNV3HyV2cuLAVnlEup2eNBFArml0chrAaOR7KZWqHureLYwNvl7mYoK6IxXaIxMAM72nNJULc6tFyozJ85iE_Tk=w3360-h1704-rw-v1",
         "instruments": [
             "Saxophone"
         ],
@@ -341,10 +341,10 @@
         ]
     },
     {
-        "name": "Colman",
+        "name": "Coleman",
         "surname": "Hawkins",
         "dates": "11/21/04-5/19/69",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihbTS1aCXD0ieE9HWoDQO54uN82VZLOkNlL_rauO1fcFBKbigkySPwm6UosdqvP_4Fe1MrjKQw-CVXy7VY49g39rnNTLAP1fQKY=w3360-h1704-rw-v1",
         "instruments": [
             "Saxophone"
         ],
@@ -364,7 +364,7 @@
         "name": "J.C.",
         "surname": "Heard",
         "dates": "10/8/17-9/27/88",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihZJXBjXyiehlzRx5OhKLN49rVA7bDs6VMWbco4Ldv8YVWkuhu1xGvUHIfFjd8s9pswVYHQSONGtXHQqblOqiDZktUK7Mgp7waY=w3360-h1704-rw-v1",
         "instruments": [
             "Drums"
         ],
@@ -383,7 +383,7 @@
         "name": "Jay C.",
         "surname": "Higginbotham",
         "dates": "5/11/06-5/26/73",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihYyCfFc1gTDqxtRK_hldkjEJGSIXtTmkFG4S4XwX-rihYp0XnCf2G05IlGcAwDKMj_8DYgWI9G2a--QycRG4-l6vxXcxBtMnJA=w3360-h1704-rw-v1",
         "instruments": [
             "Trombone"
         ],
@@ -401,7 +401,7 @@
         "name": "Milt",
         "surname": "Hinton",
         "dates": "6/23/10-12/19/00",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihYfwDVo5Wnl0stJcLJYYTcmjxWEUATzTJVYtjbtS01aSjhMIlnpdklaAIFzblBUyfo00MTCBUXGcXLuh5UKEjcePKuYNSJcat8=w3360-h1704-rw-v1",
         "instruments": [
             "Bass"
         ],
@@ -491,7 +491,7 @@
         "name": "Jimmy",
         "surname": "Jones",
         "dates": "12/30/18-4/29/82",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihZd2FjjLmKpttghObglHrh416H0bacQ8bxA33quBrB0B2Xi0Tk0n8eNf_WaQHIdlkISrI_i-D8JmcARUcIgC1WLvQnxgOq6Kg=w3360-h1704",
         "instruments": [
             "Piano"
         ],
