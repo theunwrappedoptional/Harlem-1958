@@ -18,7 +18,6 @@ struct ArtistRowView: View {
     
     var body: some View {
         HStack {
-            // TODO: Add URL for image
             AsyncImage(url: imageURL, scale: 1) { image in
                 image
                     .resizable()

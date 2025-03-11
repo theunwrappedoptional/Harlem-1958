@@ -10,47 +10,40 @@ import SwiftUI
 struct JazzStyleView: View {
     
     @Environment(ModelData.self) var modelData: ModelData
+    @State private var searchName = ""
     
-    let columns = [
-        GridItem(.adaptive(minimum: 150))
-    ]
+    func filteredList(for style: String) -> [Artist] {
+        if searchName.isEmpty{
+            return modelData.jazzStyles[style]!.sorted(by: { $0.name < $1.name } )
+        } else {
+            return modelData.jazzStyles[style]!.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
+            }.sorted(by: { $0.name < $1.name })
+        }
+    }
 
-    var filteredList: [String] {
+    var allStyles: [String] {
         return Array(modelData.jazzStyles.keys).sorted()
     }
     
     var body: some View {
+        
         NavigationStack{
-            ScrollView{
-                LazyVGrid(columns: columns) {
-                    ForEach(filteredList, id: \.self) { style in
-                        NavigationLink(value: style) {
-                            ZStack{
-                                //FIXME: Add image
-                                Color.magentaMemoir
-                                    .frame(maxWidth: CGFloat.infinity, minHeight: 150)
-                                
-                                VStack{
-                                    Text(style)
-                                        .font(Font.headline)
-                                        .foregroundStyle(Color.white)
-                                    
-                                    Text("(\(modelData.jazzStyles[style]!.count))")
-                                        .foregroundStyle(Color.white)
-                                        .font(.footnote)
+            List {
+                ForEach(allStyles, id: \.self) { style in
+                    Section(header: Text(style).font(.headline).foregroundStyle(Color.cheese)) {
+                        ForEach(filteredList(for: style), id: \.self){ artist in
+                                NavigationLink(value: artist) {
+                                    ArtistRowView(artist: artist)
                                 }
                             }
-                            .clipShape(.rect(cornerRadius:10))
                         }
                     }
                 }
-                .padding([Edge.Set.horizontal, Edge.Set.bottom])
-            }
-        
-            .navigationDestination(for: String.self) { style in
-                ArtistListView(filter: style)
-            }
+            .searchable(text: $searchName)
             .navigationTitle("Jazz Styles")
+            .navigationDestination(for: Artist.self) { artist in
+                ArtistView(artist: artist)
+            }
         }
     }
 }

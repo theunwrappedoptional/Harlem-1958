@@ -14,27 +14,12 @@ struct ArtistListView: View {
     @State private var searchName = ""
     @State private var selectedSortOption: SortOption = .name
     
-//  Hacks to manage search field visibility avoiding glitches
-//  @State private var toolbarVisibility : Visibility = .hidden
-    @State private var isSearchActive = false
-    
-    var filter = ""
-    
     var filteredList: [Artist] {
-        if filter.isEmpty {
-            if searchName.isEmpty{
-                return modelData.artists.sorted(by: sortKey)
-            } else {
-                return modelData.artists.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
-                }.sorted(by: sortKey)
-            }
+        if searchName.isEmpty{
+            return modelData.artists.sorted(by: sortKey)
         } else {
-            if searchName.isEmpty{
-                return modelData.allFiltered[filter]!.sorted(by: sortKey)
-            } else {
-                return modelData.allFiltered[filter]!.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
-                }.sorted(by: sortKey)
-            }
+            return modelData.artists.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
+            }.sorted(by: sortKey)
         }
     }
     
@@ -63,25 +48,15 @@ struct ArtistListView: View {
                 NavigationLink(value: artist) {
                     ArtistRowView(artist: artist, isOrderedBySurname: selectedSortOption == .surname ? true : false)
                 }
-                .listRowBackground(Color.maniacMansion)
+//                .listRowBackground(Color.maniacMansion)
             }
         }
+        .searchable(text: $searchName)
         .navigationDestination(for: Artist.self) { artist in
             ArtistView(artist: artist)
         }
-        .navigationTitle(filter.isEmpty ? "Harlem 1958" : filter)
+        .navigationTitle("Harlem 1958")
         .toolbar{
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button(action: {
-                    withAnimation() {
-                        // FIXME: Try to improve animation
-                        isSearchActive.toggle()
-                    }
-                }) {
-                    Image(systemName: isSearchActive ? "magnifyingglass.circle.fill" : "magnifyingglass.circle")
-                }
-            }
-            
             ToolbarItem(placement: .navigationBarTrailing) {
                 Menu("Sort", systemImage: "arrow.up.arrow.down") {
                     Picker("Sort", selection: $selectedSortOption) {
@@ -92,31 +67,6 @@ struct ArtistListView: View {
                 }
             }
         }
-        .if(isSearchActive) { view in
-            view
-            .searchable(text: $searchName)
-        }
-//        .searchable(text: $searchName)
-        
-//       Hack 1 to avoid glich on search field during navigation transitions (check view "if"   extension) - The search fild still has a quite random behaviour
-//
-//        .if(isViewReady) { view in
-//            view
-//            .searchable(text: $searchName)
-//        }
-//        .task {
-            // Delay applying the searchable modifier until after transition
-//            try? await Task.sleep(nanoseconds: 100_000_000) // 0.1 seconds
-//            isViewReady = true
-//        }
-        
-        
-//      Hack 2 to avoid glich on search field during navigation transitions
-//      This solution compromises the animation flow during the transition
-//        .onAppear {toolbarVisibility = .automatic}
-//        .toolbar(toolbarVisibility, for: .navigationBar)
-//        .searchable(text: $searchName)
-        
     }
 }
 

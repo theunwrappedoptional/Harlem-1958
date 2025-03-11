@@ -10,24 +10,38 @@ import SwiftUI
 struct InstrumentListView: View {
     
     @Environment(ModelData.self) var modelData: ModelData
+    @State private var searchName = ""
     
-    var filteredList: [String] {
+    var allInstruments: [String] {
         return Array(modelData.instruments.keys).sorted()
+    }
+    
+    func filteredList(for instrument: String) -> [Artist] {
+        if searchName.isEmpty{
+            return modelData.instruments[instrument]!.sorted(by: { $0.name < $1.name } )
+        } else {
+            return modelData.instruments[instrument]!.filter { $0.fullName.localizedCaseInsensitiveContains(searchName)
+            }.sorted(by: { $0.name < $1.name })
+        }
     }
     
     var body: some View {
         NavigationStack{
             List {
-                ForEach(filteredList, id: \.self) { instrument in
-                    NavigationLink(value: instrument) {
-                        InstrumentRowView(instrument: instrument)
+                ForEach(allInstruments, id: \.self) { instrument in
+                    Section(header: Text(instrument).font(.headline).foregroundStyle(Color.cheese)) {
+                        ForEach(filteredList(for: instrument), id: \.self){ artist in
+                                NavigationLink(value: artist) {
+                                    ArtistRowView(artist: artist)
+                                }
+                            }
+                        }
                     }
-                    .listRowBackground(Color.maniacMansion)
                 }
-            }
+            .searchable(text: $searchName)
             .navigationTitle("Instruments")
-            .navigationDestination(for: String.self) { instrument in
-                ArtistListView(filter: instrument)
+            .navigationDestination(for: Artist.self) { artist in
+                ArtistView(artist: artist)
             }
         }
     }

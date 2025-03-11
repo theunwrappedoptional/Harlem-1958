@@ -25,12 +25,10 @@ struct ContentView: View {
                 Label("Instruments", image: "custom.instrument")
             }
             
-            //TODO: Add WebView with Wikipedia history page
-            
-//            JazzStyleView()
-//            .tabItem {
-//                Label("Jazz Styles", systemImage: "music.quarternote.3")
-//            }
+            JazzStyleView()
+            .tabItem {
+                Label("Jazz Styles", systemImage: "music.quarternote.3")
+            }
         }
         .preferredColorScheme(.dark)
     }
