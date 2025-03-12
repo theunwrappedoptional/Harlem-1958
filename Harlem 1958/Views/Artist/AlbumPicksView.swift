@@ -36,7 +36,7 @@ struct AlbumPicksView: View {
                                 .padding(5)
                         }
                         .frame(width: 150, height: 150, alignment: .center)
-                        .background(.magentaMemoir)
+                        .background(.twilight)
                         .clipShape(RoundedRectangle(cornerRadius: 5))
                     }
                 }

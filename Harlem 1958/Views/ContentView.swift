@@ -8,30 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @Environment(ModelData.self) var modelData: ModelData
-    
+        
     var body: some View {
         TabView {
-            NavigationStack{
-                ArtistListView()
-            }
+            ArtistsView()
             .tabItem {
                 Label("Artists", systemImage: "person.3.fill")
             }
             
-            InstrumentListView()
+            ArtistsView(groupedBy: .instrument, navTitle: "Instruments")
             .tabItem {
                 Label("Instruments", image: "custom.instrument")
             }
             
-            JazzStyleView()
+            ArtistsView(groupedBy: .jazzStyle, navTitle: "Jazz Styles")
             .tabItem {
                 Label("Jazz Styles", systemImage: "music.quarternote.3")
             }
         }
         .preferredColorScheme(.dark)
     }
+}
+
+enum GroupByOption: String, CaseIterable, Identifiable {
+    case none = "All"
+    case instrument = "Instrument"
+    case jazzStyle = "Style"
+    
+    var id: String { rawValue }
 }
 
 #Preview {
