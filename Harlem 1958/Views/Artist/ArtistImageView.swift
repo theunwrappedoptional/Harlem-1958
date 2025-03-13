@@ -34,7 +34,7 @@ struct ArtistImageView: View {
                                 }
                             }
                     case .failure:
-                        Image(systemName: "placeholder") // Placeholder on failure
+                        Image("placeholder") // Placeholder on failure
                             .resizable()
                             .scaledToFill()
                             .foregroundColor(.gray)
