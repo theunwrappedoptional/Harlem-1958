@@ -34,6 +34,10 @@ private struct SortMenu: View {
 struct ArtistsView: View {
     
     @Environment(ModelData.self) var modelData: ModelData
+    @State private var networkMonitor = NetworkMonitor()
+
+//    @State private var showConnectionAlert = false
+
     @State private var searchQuery = ""
     @State private var selectedSortOption: ListSortOption = .name
     var groupedBy: GroupByOption = .none
@@ -103,6 +107,13 @@ struct ArtistsView: View {
                     SortMenu(selectedOption: $selectedSortOption)
                 }
             }
+        }
+        .alert(isPresented: $networkMonitor.showAlert) {
+            Alert(
+                title: Text("It looks like you're not connected to the internet"),
+                message: Text("Without internet connection you won't be able to access all the app contents. Please check your connection and try again."),
+                dismissButton: .default(Text("OK"))
+            )
         }
     }
 }
