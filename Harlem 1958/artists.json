@@ -21,7 +21,7 @@
         "name": "Buster",
         "surname": "Bailey",
         "dates": "6/19/02-4/12/67",
-        "pic":"https://drive.google.com/drive-viewer/AKGpihZ5iqQteeatXY0M_wI80SuyBjQBCOgog5DSpbMp46MSTrgyy0oKVaencfoXlxPJvrTwOi-7x2O3-t2R9mroL-lezs9fitdOpfU=w3360-h1704-rw-v1",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihb7mb6CAlMK_7To5FXkuE1n6xDnvAYu_agrmDkqD2nFg-JkpkVcJMgvCk3jNFH9NtR-iCOMKZzMacEKsjOuidAZFYc7laklCGU=w3360-h1704-rw-v1",
         "instruments": [
             "Clarinet"
         ],
@@ -38,7 +38,7 @@
         "name": "Count",
         "surname": "Basie",
         "dates": "8/21/04-4/26/84",
-        "pic":"https://drive.google.com/drive-viewer/AKGpihYXQzdHuKBCCcFAYKFklxNC7CNdjN-VA0g4yIHzCaCuWvsYhpIhwyIRYE9r8Hm5KYdEbdHHHaZMRE4v_56ZRK6uJObxdbyRMMM=w3360-h1704-rw-v1",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihbTeR6LR5iZgLV_ExecEsJTRKHo6eeBQzEULlPmSiyW7YaxLdvKdV2rqQcRDd6QdQAV9mKefXCUUUd-Oct6FVxvgC6omLlwNz8=w3360-h1704-rw-v1",
         "instruments": [
             "Piano"
         ],
@@ -199,7 +199,7 @@
         "name": "Art",
         "surname": "Farmer",
         "dates": "9/21/28-10/4/99",
-        "pic":"https://drive.google.com/drive-viewer/AKGpihayXBPVa3lBg0aiyPQ7uOnNIQzH12Y9OqwJc7p2oPhucDtVcX7xsE1kfhTAb_FyJD9mrLpCshIrZSUgscH_2gHPTYJlWbsOwA=w3360-h1704-rw-v1",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihYJCWsQKol_GdbOw352_2wzIrKJqsGVUDtoNB7HOjzTD_DYEEr9V62GfLR6Tq2oegpg5A9O9wrAUvgPkZe9fWtbZ5_NqWfUZ9w=w3360-h1704-rw-v1",
         "instruments": [
             "Trumpet"
         ],
@@ -707,7 +707,7 @@
         "name": "Rudy",
         "surname": "Powell",
         "dates": "10/28/07-10/30/76",
-        "pic":"",
+        "pic":"_",
         "instruments": [
             "Saxophone"
         ],
@@ -723,10 +723,10 @@
         ]
     },
     {
-        "name": "Lucky",
+        "name": "Luckey",
         "surname": "Roberts",
         "dates": "8/7/1887-2/5/68",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihaNkXeOOnxyGbn-1J3oMstDXX5VQ39rKyWMmeeih7lQVmGnvS2zX3PU1KVSH1IMVYHN8m8gYz-oxo8HyOWAoK8K5ymCOfg7Q6E=w3360-h1704-rw-v1",
         "instruments": [
             "Piano"
         ],
@@ -743,7 +743,7 @@
         "name": "Sonny",
         "surname": "Rollins",
         "dates": "9/7/30-",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihbCTUXffec1edSWolvLvocujLgb9hf-u0Lk3orJTQQKI0yNB1DzgL-t8--IyuBY47_uS4Ay3fvk1xXqrGPKp71wko8N4Cd7uFQ=w3360-h1046-rw-v1",
         "instruments": [
             "Saxophone"
         ],
@@ -762,7 +762,7 @@
         "name": "Jimmy",
         "surname": "Rushing",
         "dates": "8/26/03-6/8/72",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihb6vpLn_tJOfUCftp23Y4QXmMzTJ2LotYF6v--_avKoD7SF1Jp0FLQvkpFf8d0b9LYN2y70CQuXsZ_DTHA9Q6U9_7yMIFiWZA=w3360-h1704-rw-v1",
         "instruments": [
             "Voice"
         ],
@@ -780,7 +780,7 @@
         "name": "Pee Wee",
         "surname": "Russel",
         "dates": "3/27/06-2/15/69",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihaUxjukrZ24H8FO9lgRrt3Mxhe6IY_4gsplysGvIHzJVkILOokeTPjiKsSFjuw3q_QZ0CpkWMcEIdbB-LGB2QLnHI6bJh2MDU0=w3360-h1704-rw-v1",
         "instruments": [
             "Clarinet"
         ],
@@ -799,7 +799,7 @@
         "name": "Sahib",
         "surname": "Shihab",
         "dates": "6/23/25-10/24/89",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihbYREmHpxBuVbaWPL_MOFh_MIYerZlZUvMXtfPLiITPmG0H1ghspL1P2s3NTNS9_kJnOcjbWkxKE8kiO-gMZCnHfp78__J7R98=w3360-h1704-rw-v1",
         "instruments": [
             "Saxophone"
         ],
@@ -816,7 +816,7 @@
         "name": "Horace",
         "surname": "Silver",
         "dates": "9/2/28-6/18/14",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihb1rMDF-IWs4tL7Dmd7Y85c4BltQwK0odh7rjo1BIbwcl1Vm9ARUmE0QhVPPxhJ8ddjMx8YbuhapfaEWdcvd59JXMVNs3rEdlg=w3360-h1704-rw-v1",
         "instruments": [
             "Piano"
         ],
@@ -834,7 +834,7 @@
         "name": "Zutty",
         "surname": "Singleton",
         "dates": "5/14/1898-7/14/75",
-        "pic":"",
+        "pic":"https://drive.google.com/drive-viewer/AKGpihZp_qfMYHUQPF3Xos2aElNnaYLWUNXpdnlIV7r99u4vkiHHJAZV-giqNeB-ktL9yoBTSr9Dc8tL6qVhHSt8EddkdqW8yo8exw=w3360-h1704-rw-v1",
         "instruments": [
             "Drums"
         ],
