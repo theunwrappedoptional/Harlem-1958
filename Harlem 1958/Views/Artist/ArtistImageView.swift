@@ -66,7 +66,7 @@ struct ArtistImageView: View {
 
 #Preview {
     let artists:[Artist] = Bundle.main.decode("artists.json")
-    return ArtistImageView(artist: artists[0])
+    return ArtistImageView(artist: artists[1])
             .preferredColorScheme(.dark)
             .frame(width: 300, height: 600)
 }

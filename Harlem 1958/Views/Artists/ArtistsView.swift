@@ -66,15 +66,15 @@ struct ArtistsView: View {
         default:
             let groups = groupedBy.rawValue == "Instrument" ? modelData.instruments : modelData.jazzStyles
             
-            var sortandAndFilter = groups
+            var sortedAndFiltered = groups
             
             for item in groups.keys {
                 if !searchQuery.isEmpty {
-                    sortandAndFilter[item] = groups[item]!.filter { $0.fullName.localizedCaseInsensitiveContains(searchQuery)
+                    sortedAndFiltered[item] = groups[item]!.filter { $0.fullName.localizedCaseInsensitiveContains(searchQuery)
                     }
                 }
                 
-                sortandAndFilter[item]!.sort { first, second in
+                sortedAndFiltered[item]!.sort { first, second in
                     switch selectedSortOption {
                     case .name:
                         return first.name < second.name
@@ -86,7 +86,7 @@ struct ArtistsView: View {
                 }
             }
             
-            return sortandAndFilter
+            return sortedAndFiltered
         }
     }
     
@@ -114,6 +114,9 @@ struct ArtistsView: View {
                 message: Text("Without internet connection you won't be able to access all the app contents. Please check your connection and try again."),
                 dismissButton: .default(Text("OK"))
             )
+        }
+        .onAppear{
+            print(list["All"]!.count)
         }
     }
 }
